@@ -9,6 +9,8 @@
 private:
 	int _sourceEntityId;
 	int _targetEntityId;
+	std::string _targetEntityName;
+	std::string _targetEntityKindName;
 	ReferenceKind _kind;
 	std::string _file;
 	int _line;
@@ -20,6 +22,8 @@ public:
 
 	int GetSourceEntityId() const;
 	int GetTargetEntityId() const;
+	std::string GetTargetEntityName() const;
+	std::string GetTargetEntityKindName() const;
 	ReferenceKind GetKind() const;
 	std::string GetFile() const;
 	int GetLine() const;

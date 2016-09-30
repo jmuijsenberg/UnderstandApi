@@ -22,6 +22,7 @@ public:
 	Language GetLanguage() const;
 	std::string GetName() const;
 	std::string GetBuild() const;
+	std::list<Entity*> GetFiles() const;
 	std::list<Entity*> GetEntities() const;
 	std::list<Metric*> GetMetrics() const;
 };

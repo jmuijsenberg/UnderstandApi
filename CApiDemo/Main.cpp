@@ -41,8 +41,8 @@ int main(int argc, char *argv[]) {
 		//ListEntityKinds();
 		//ListReferenceKinds();
 
-		std::list<Entity*> entities = project.GetEntities();
-
+		//std::list<Entity*> entities = project.GetEntities();
+		std::list<Entity*> entities = project.GetFiles();
 		for (std::list<Entity*>::iterator eit = entities.begin(); eit != entities.end(); ++eit)
 		{
 			Entity* pEntity = *eit;
@@ -52,14 +52,16 @@ int main(int argc, char *argv[]) {
 			printf("name = %s\n", pEntity->GetName().c_str());
 			printf("type = %s\n", pEntity->GetType().c_str());
 			printf("kind = %s\n", pEntity->GetKindText().c_str());
-			std::list<Reference*> references = pEntity->GetReferences();
 
+			std::list<Reference*> references = pEntity->GetReferences();
 			for (std::list<Reference*>::iterator rit = references.begin(); rit != references.end(); ++rit)
 			{
 				Reference* pReference = *rit;
 
 				printf("  ===================================================\n");
 				printf("  target id = %i\n", pReference->GetTargetEntityId());
+				printf("  target name = %s\n", pReference->GetTargetEntityName().c_str());
+				printf("  target kind = %s\n", pReference->GetTargetEntityKindName().c_str());
 				printf("  ref kind = %s\n", pReference->GetKindText().c_str());
 				printf("  ref file = %s\n", pReference->GetFile().c_str());
 				printf("  ref line = %i\n", pReference->GetLine());
@@ -79,18 +81,18 @@ int main(int argc, char *argv[]) {
 			}
 		}
 
-		std::list<Metric*> projectMetrics = project.GetMetrics();
+		//std::list<Metric*> projectMetrics = project.GetMetrics();
 
-		for (std::list<Metric*>::iterator it = projectMetrics.begin(); it != projectMetrics.end(); ++it)
-		{
-			Metric* pMetric = *it;
+		//for (std::list<Metric*>::iterator it = projectMetrics.begin(); it != projectMetrics.end(); ++it)
+		//{
+		//	Metric* pMetric = *it;
 
-			printf("  ===================================================\n");
-			printf("  project metric name = %s\n", pMetric->GetName().c_str());
-			printf("  project metric description = %s\n", pMetric->GetDescription().c_str());
-			printf("  project metric is integer = %d\n", pMetric->IsInteger());
-			printf("  project metric value = %f\n", pMetric->GetValue());
-		}
+		//	printf("  ===================================================\n");
+		//	printf("  project metric name = %s\n", pMetric->GetName().c_str());
+		//	printf("  project metric description = %s\n", pMetric->GetDescription().c_str());
+		//	printf("  project metric is integer = %d\n", pMetric->IsInteger());
+		//	printf("  project metric value = %f\n", pMetric->GetValue());
+		//}
 		
 		project.Close();
 	}

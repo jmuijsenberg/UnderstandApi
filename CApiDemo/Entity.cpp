@@ -18,8 +18,8 @@ Entity::Entity(UdbEntity udbEntity, UdbLanguage udbLanguage)
 
 	UdbReference *refs;
 	int refsSize;
-	udbListReference(udbEntity, &refs, &refsSize);
-
+	//udbListReference(udbEntity, &refs, &refsSize);
+	udbListReferenceFile(udbEntity, &refs, &refsSize);
 	for (int i = 0; i < refsSize; i++) {
 		Reference* pReference = new Reference(_id, refs[i], udbLanguage);
 		_references.push_back(pReference);

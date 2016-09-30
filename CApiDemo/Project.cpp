@@ -82,6 +82,26 @@ std::string Project::GetBuild() const
 
 	return udbInfoBuild();}
 
+std::list<Entity*> Project::GetFiles() const
+{
+	assert(_isOpen);
+
+	std::list<Entity*> entities;
+
+	UdbEntity *ents;
+	int entsSize;
+	udbListFile(&ents, &entsSize);
+
+	for (int i = 0; i < entsSize; i++) {
+		Entity* pEntity = new Entity(ents[i], udbEntityLanguage(ents[i]));
+		entities.push_back(pEntity);
+	}
+
+	udbListEntityFree(ents);
+
+	return entities;
+}
+
 std::list<Entity*> Project::GetEntities() const
 {
 	assert(_isOpen);

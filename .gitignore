@@ -1,4 +1,11 @@
-/CApiDemo/Debug
-/CApiDemo/x64
+Debug
+x64
 CApiDemo.sdf
 CApiDemo.VC.db
+Samples/Cpp/Debug
+Samples/Cpp/UnderstandSample.VC.db
+Samples/Cpp/
+Samples/CSharp/UnderstandSample/bin
+Samples/CSharp/UnderstandSample/obj
+Samples/Java/out
+Samples/Java/.idea

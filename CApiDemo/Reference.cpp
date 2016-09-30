@@ -4,6 +4,8 @@ Reference::Reference(int sourceEntityId, UdbReference udbReference, UdbLanguage 
 {
 	_sourceEntityId = sourceEntityId;
 	_targetEntityId = udbEntityId(udbReferenceEntity(udbReference));
+	_targetEntityName = udbEntityNameShort(udbReferenceEntity(udbReference));
+	_targetEntityKindName = udbKindLongname(udbEntityKind(udbReferenceEntity(udbReference)));
 
 	_kindText = udbKindLongname(udbReferenceKind(udbReference));
 
@@ -26,6 +28,16 @@ int Reference::GetSourceEntityId() const
 int Reference::GetTargetEntityId() const
 {
 	return _targetEntityId;
+}
+
+std::string Reference::GetTargetEntityName() const
+{
+	return _targetEntityName;
+}
+
+std::string Reference::GetTargetEntityKindName() const
+{
+	return _targetEntityKindName;
 }
 
 ReferenceKind Reference::GetKind() const
