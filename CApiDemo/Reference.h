@@ -1,33 +1,40 @@
 #pragma once
 
 #include "udb.h" 
+
 #include "Entity.h"
 #include "ReferenceKind.h"
 
- class Reference
+using namespace std;
+
+class Reference
 {
 private:
 	int _sourceEntityId;
+	string _sourceEntityName;
+	string _sourceEntityKindName;
 	int _targetEntityId;
-	std::string _targetEntityName;
-	std::string _targetEntityKindName;
+	string _targetEntityName;
+	string _targetEntityKindName;
 	ReferenceKind _kind;
-	std::string _file;
+	string _file;
 	int _line;
 	int _column;
-	std::string _kindText;
+	string _kindText;
 public:
-	Reference(int sourceEntityId, UdbReference udbReference, UdbLanguage udbLanguage);
+	Reference(UdbEntity sourceEntity, UdbReference udbReference, UdbLanguage udbLanguage);
 	~Reference();
 
 	int GetSourceEntityId() const;
+	string GetSourceEntityName() const;
+	string GetSourceEntityKindName() const;
 	int GetTargetEntityId() const;
-	std::string GetTargetEntityName() const;
-	std::string GetTargetEntityKindName() const;
+	string GetTargetEntityName() const;
+	string GetTargetEntityKindName() const;
 	ReferenceKind GetKind() const;
-	std::string GetFile() const;
+	string GetFile() const;
 	int GetLine() const;
 	int GetColumn() const;
-	std::string GetKindText() const;
+	string GetKindText() const;
 };
 

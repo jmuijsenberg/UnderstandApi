@@ -18,10 +18,9 @@ Entity::Entity(UdbEntity udbEntity, UdbLanguage udbLanguage)
 
 	UdbReference *refs;
 	int refsSize;
-	//udbListReference(udbEntity, &refs, &refsSize);
-	udbListReferenceFile(udbEntity, &refs, &refsSize);
+	udbListReference(udbEntity, &refs, &refsSize);
 	for (int i = 0; i < refsSize; i++) {
-		Reference* pReference = new Reference(_id, refs[i], udbLanguage);
+		Reference* pReference = new Reference(udbEntity, refs[i], udbLanguage);
 		_references.push_back(pReference);
 	}
 
@@ -47,17 +46,17 @@ int Entity::GetId() const
 	return _id;
 }
 
-std::string Entity::GetNamespace() const
+string Entity::GetNamespace() const
 {
 	return _namespace;
 }
 
-std::string Entity::GetName() const
+string Entity::GetName() const
 {
 	return _name;
 }
 
-std::string Entity::GetType() const
+string Entity::GetType() const
 {
 	return _type;
 }
@@ -77,27 +76,27 @@ Language Entity::GetLanguage() const
 	return _language;
 }
 
-std::list<Reference*> Entity::GetReferences() const
+list<Reference*> Entity::GetReferences() const
 {
 	return _references;
 }
 
-std::list<Metric*> Entity::GetMetrics() const
+list<Metric*> Entity::GetMetrics() const
 {
 	return _metrics;
 }
 
-std::string Entity::GetComment() const
+string Entity::GetComment() const
 {
 	return _comment;
 }
 
-std::string Entity::GetLibrary() const
+string Entity::GetLibrary() const
 {
 	return _library;
 }
 
-std::string Entity::GetKindText() const
+string Entity::GetKindText() const
 {
 	return _kindText;
 }

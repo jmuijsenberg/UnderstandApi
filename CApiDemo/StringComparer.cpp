@@ -2,7 +2,7 @@
 
 
 
-StringComparer::StringComparer(std::string text)
+StringComparer::StringComparer(string text)
 {
 	_text = text;
 }
@@ -11,7 +11,7 @@ StringComparer::~StringComparer()
 {
 }
 
-bool StringComparer::ContainsText(std::string substring) const
+bool StringComparer::ContainsText(string substring) const
 {
-	return (_text.find(substring) != std::string::npos);
+	return (_text.find(substring) != string::npos);
 }

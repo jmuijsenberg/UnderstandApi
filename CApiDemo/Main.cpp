@@ -1,100 +1,217 @@
-#include <stdio.h> 
+#include <fstream>
+#include <iostream>
+
 #include "udb.h" 
+
 #include "Project.h"
 #include "Entity.h"
 #include "Reference.h"
 #include "Metric.h"
 
-static char  *dbFilename = "D:\\CSharpModel.udb";
+using namespace std;
 
-void ListEntityKinds()
+void ShowError(string error)
 {
-	int size;
-	UdbKind* entityKinds;
-
-	udbListKindEntity(&entityKinds, &size);
-	printf("All Entity Kinds : \n");
-	for (int i = 0; i < size; i++) {
-		printf(" %s\n", udbKindLongname(entityKinds[i]));
-	}
-	udbListKindFree(entityKinds);
+	cout << "Error: " << error << "\n";
+	
+	cout << "Command line usage\n";
+	cout << " CAiDemo <understandfilename> -listEntityKinds -f <outputfile> - Lists types of entities supported\n";
+	cout << " CAiDemo <understandfilename> -listReferenceKinds -f <outputfile> - Lists types of references supported\n";
+	cout << " CAiDemo <understandfilename> -listEntities -f <outputfile> - Lists entities inclduing references and metrics\n";
+	cout << " CAiDemo <understandfilename> -listProjectMetrics -f <outputfile> - Lists project metrics\n";
 }
 
-void ListReferenceKinds()
+void ListEntityKinds(Project project, string outputFilename)
 {
+	ofstream outputFile;
+	outputFile.open(outputFilename);
+
+	outputFile << "<EntityKinds>\n";
+
+	int size;
+	UdbKind* entityKinds;
+	udbListKindEntity(&entityKinds, &size);
+
+	for (int i = 0; i < size; i++) {
+		outputFile << "  <EntityKind>\n";
+		outputFile << "    <Id>" << entityKinds[i] << "</Id>\n";
+		outputFile << "    <Name>" << udbKindLongname(entityKinds[i]) << "</Name>\n";
+		outputFile << "  </EntityKind>\n";
+	}
+
+	udbListKindFree(entityKinds);
+
+	outputFile << "</EntityKinds>\n";
+
+	outputFile.close();
+}
+
+void ListReferenceKinds(Project project, string outputFilename)
+{
+	ofstream outputFile;
+	outputFile.open(outputFilename);
+
+	outputFile << "<ReferenceKinds>\n";
+
 	int size;
 	UdbKind* referenceKinds;
-
 	udbListKindReference(&referenceKinds, &size);
-	printf("All Reference Kinds : \n");
+
 	for (int i = 0; i < size; i++) {
-		printf(" %s\n", udbKindLongname(referenceKinds[i]));
+		outputFile << "  <ReferenceKind>\n";
+		outputFile << "    <Id>" << referenceKinds[i] << "</Id>\n";
+		outputFile << "    <Name>" << udbKindLongname(referenceKinds[i]) << "</Name>\n";
+		outputFile << "  </ReferenceKind>\n";
 	}
+	
 	udbListKindFree(referenceKinds);
+
+	outputFile << "</ReferenceKinds>\n";
+
+	outputFile.close();
+}
+
+void ListProjectMetrics(Project project, string outputFilename)
+{
+	ofstream outputFile;
+	outputFile.open(outputFilename);
+
+	outputFile << "<ProjectMetrics>\n";
+
+	list<Metric*> projectMetrics = project.GetMetrics();
+	for (list<Metric*>::iterator it = projectMetrics.begin(); it != projectMetrics.end(); ++it)
+	{
+		Metric* pMetric = *it;
+		string valueType = pMetric->IsInteger() ? "Integer" : "Double";
+
+		outputFile << "  <ProjectMetric>\n";
+		outputFile << "    <Name>" << pMetric->GetName() << "</Name>\n";
+		outputFile << "    <Description>" << pMetric->GetDescription() << "</Description>\n";
+		outputFile << "    <Type>" << valueType << "</Type>\n";
+		outputFile << "    <Value>%f</Value>\n", pMetric->GetValue();
+		outputFile << "  </ProjectMetric>\n";
+
+		delete pMetric;
+	}
+
+	outputFile << "</ProjectMetrics>\n";
+
+	outputFile.close();
+}
+
+void ListEntities(Project project, string outputFilename)
+{
+	ofstream outputFile;
+	outputFile.open(outputFilename);
+
+	outputFile << "<Entities>\n";
+
+	list<Entity*> entities = project.GetEntities();
+	for (list<Entity*>::iterator eit = entities.begin(); eit != entities.end(); ++eit)
+	{
+		Entity* pEntity = *eit;
+
+		outputFile << "  <Entity>\n";
+		outputFile << "    <Id>" << pEntity->GetId() << "</Id>\n";
+		outputFile << "    <Name>" << pEntity->GetName() << "</Name>\n";
+		outputFile << "    <Type>" << pEntity->GetType() << "</Type>\n";
+		outputFile << "    <Kind>" << pEntity->GetKindText() << "</Kind>\n";
+
+		outputFile << "    <References>\n";
+		list<Reference*> references = pEntity->GetReferences();
+		for (list<Reference*>::iterator rit = references.begin(); rit != references.end(); ++rit)
+		{
+			Reference* pReference = *rit;
+
+			outputFile << "      <Reference>\n";
+			outputFile << "        <SourceId>" << pReference->GetSourceEntityId() << "</SourceId>\n";
+			outputFile << "        <SourceName>" << pReference->GetSourceEntityName() << "</SourceName>\n";
+			outputFile << "        <SourceKind>" << pReference->GetSourceEntityKindName() << "</SourceKind>\n";
+			outputFile << "        <TargetId>" << pReference->GetTargetEntityId() << "</TargetId>\n";
+			outputFile << "        <TargetName>" << pReference->GetTargetEntityName() << "</TargetName>\n";
+			outputFile << "        <TargetKind>" << pReference->GetTargetEntityKindName() << "</TargetKind>\n";
+			outputFile << "        <ReferencKind>" << pReference->GetKindText() << "</ReferencKind>\n";
+			outputFile << "        <File>" << pReference->GetFile() << "</File>\n";
+			outputFile << "        <Line>" << pReference->GetLine() << "</Line>\n";
+			outputFile << "        <Column>" << pReference->GetColumn() << "</Column>\n";
+			outputFile << "      </Reference>\n";
+
+			delete pReference;
+		}
+		outputFile << "    </References>\n";
+
+		outputFile << "    <Metrics>\n";
+		list<Metric*> entityMetrics = pEntity->GetMetrics();
+		for (list<Metric*>::iterator mit = entityMetrics.begin(); mit != entityMetrics.end(); ++mit)
+		{
+			Metric* pMetric = *mit;
+			string valueType = pMetric->IsInteger() ? "Integer" : "Double";
+			outputFile << "      <Metric>\n";
+			outputFile << "        <Name>" << pMetric->GetName() << "</Name>\n";
+			outputFile << "        <Description>" << pMetric->GetDescription() << "</Description>\n";
+			outputFile << "        <Type>" << valueType << "</Type>\n";
+			outputFile << "        <Value>" << pMetric->GetValue() << "</Value>\n";
+			outputFile << "      </Metric>\n";
+
+			delete pMetric;
+		}
+		outputFile << "    </Metrics>\n";
+		outputFile << "  </Entity>\n";
+
+		delete pEntity;
+	}
+
+	printf("</Entities>\n");
+
+	outputFile.close();
 }
 
 int main(int argc, char *argv[]) {
 
-	Project project(dbFilename);
-	if (project.Open())
+	if (argc < 2)
 	{
-		//ListEntityKinds();
-		//ListReferenceKinds();
+		ShowError("No understand file provided");
+	}
+	else if (argc == 2)
+	{
+		ShowError("No options provided");
+	}
+	else if (argc == 3 || argc ==4)
+	{
+		ShowError("No or incorrect output file provided");
+	}
+	else
+	{
+		string dbFilename = argv[1];
+		string options = argv[2];
+		string outputFilename = argv[4];
 
-		//std::list<Entity*> entities = project.GetEntities();
-		std::list<Entity*> entities = project.GetFiles();
-		for (std::list<Entity*>::iterator eit = entities.begin(); eit != entities.end(); ++eit)
+		Project project(dbFilename);
+		if (project.Open())
 		{
-			Entity* pEntity = *eit;
-
-			printf("  ===================================================\n");
-			printf("id = %i\n", pEntity->GetId());
-			printf("name = %s\n", pEntity->GetName().c_str());
-			printf("type = %s\n", pEntity->GetType().c_str());
-			printf("kind = %s\n", pEntity->GetKindText().c_str());
-
-			std::list<Reference*> references = pEntity->GetReferences();
-			for (std::list<Reference*>::iterator rit = references.begin(); rit != references.end(); ++rit)
+			if (options == "-listEntityKinds")
 			{
-				Reference* pReference = *rit;
-
-				printf("  ===================================================\n");
-				printf("  target id = %i\n", pReference->GetTargetEntityId());
-				printf("  target name = %s\n", pReference->GetTargetEntityName().c_str());
-				printf("  target kind = %s\n", pReference->GetTargetEntityKindName().c_str());
-				printf("  ref kind = %s\n", pReference->GetKindText().c_str());
-				printf("  ref file = %s\n", pReference->GetFile().c_str());
-				printf("  ref line = %i\n", pReference->GetLine());
-				printf("  ref col = %i\n", pReference->GetColumn());
+				ListEntityKinds(project, outputFilename);
+			}
+			else if(options == "-listReferenceKinds")
+			{
+				ListReferenceKinds(project, outputFilename);
+			}
+			else if (options == "-listEntities")
+			{
+				ListEntities(project, outputFilename);
+			}
+			else if (options == "-listProjectMetrics")
+			{
+				ListProjectMetrics(project, outputFilename);
+			}
+			else
+			{
+				ShowError("Unknown option provided");
 			}
 
-			std::list<Metric*> entityMetrics = pEntity->GetMetrics();
-			for (std::list<Metric*>::iterator mit = entityMetrics.begin(); mit != entityMetrics.end(); ++mit)
-			{
-				Metric* pMetric = *mit;
-
-				printf("  ===================================================\n");
-				printf("  entity metric name = %s\n", pMetric->GetName().c_str());
-				printf("  entity metric description = %s\n", pMetric->GetDescription().c_str());
-				printf("  entity metric is integer = %d\n", pMetric->IsInteger());
-				printf("  entity metric value = %f\n", pMetric->GetValue());
-			}
+			project.Close();
 		}
-
-		//std::list<Metric*> projectMetrics = project.GetMetrics();
-
-		//for (std::list<Metric*>::iterator it = projectMetrics.begin(); it != projectMetrics.end(); ++it)
-		//{
-		//	Metric* pMetric = *it;
-
-		//	printf("  ===================================================\n");
-		//	printf("  project metric name = %s\n", pMetric->GetName().c_str());
-		//	printf("  project metric description = %s\n", pMetric->GetDescription().c_str());
-		//	printf("  project metric is integer = %d\n", pMetric->IsInteger());
-		//	printf("  project metric value = %f\n", pMetric->GetValue());
-		//}
-		
-		project.Close();
 	}
 }
 

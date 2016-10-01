@@ -1,18 +1,22 @@
 #pragma once
 
 #include <string>
+
 #include "udb.h"
+
 #include "ReferenceKind.h"
+
+using namespace std;
 
 class ReferenceKindsParser
 {
 	ReferenceKind __referencKind;
 public:
-	ReferenceKindsParser(std::string kind, UdbLanguage udbLanguage);
+	ReferenceKindsParser(string kind, UdbLanguage udbLanguage);
 	~ReferenceKindsParser();
 private:
-	void ParseCppKinds(std::string kind);
-	void ParseCSharpKinds(std::string kind);
-	void ParseJavaKinds(std::string kind);
+	void ParseCppKinds(string kind);
+	void ParseCSharpKinds(string kind);
+	void ParseJavaKinds(string kind);
 };
 

@@ -1,7 +1,7 @@
 #include "ReferenceKindsParser.h"
 #include "StringComparer.h"
 
-ReferenceKindsParser::ReferenceKindsParser(std::string kind, UdbLanguage udbLanguage)
+ReferenceKindsParser::ReferenceKindsParser(string kind, UdbLanguage udbLanguage)
 {
 	switch (udbLanguage)
 	{
@@ -23,7 +23,7 @@ ReferenceKindsParser::~ReferenceKindsParser()
 {
 }
 
-void ReferenceKindsParser::ParseCppKinds(std::string kind)
+void ReferenceKindsParser::ParseCppKinds(string kind)
 {
 	StringComparer comparer(kind);
 
@@ -150,7 +150,7 @@ void ReferenceKindsParser::ParseCppKinds(std::string kind)
 	else {}
 }
 
-void ReferenceKindsParser::ParseCSharpKinds(std::string kind)
+void ReferenceKindsParser::ParseCSharpKinds(string kind)
 {
 	StringComparer comparer(kind);
 
@@ -209,7 +209,7 @@ void ReferenceKindsParser::ParseCSharpKinds(std::string kind)
 	else {}
 }
 
-void ReferenceKindsParser::ParseJavaKinds(std::string kind)
+void ReferenceKindsParser::ParseJavaKinds(string kind)
 {
 	StringComparer comparer(kind);
 

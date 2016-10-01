@@ -12,12 +12,12 @@ Metric::~Metric()
 {
 }
 
-std::string Metric::GetName() const
+string Metric::GetName() const
 {
 	return _name;
 }
 
-std::string Metric::GetDescription() const
+string Metric::GetDescription() const
 {
 	return _description;
 }

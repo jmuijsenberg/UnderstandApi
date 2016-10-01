@@ -5,17 +5,19 @@
 #include "Scope.h"
 #include "EntityKind.h"
 
+using namespace std;
+
 class EntityKindParser
 {
 private:
 	Scope _scope;
 	EntityKind _entityKind;
 public:
-	EntityKindParser(std::string kind, UdbLanguage udbLanguage);
+	EntityKindParser(string kind, UdbLanguage udbLanguage);
 	~EntityKindParser();
 private:
-	void ParseCppKinds(std::string kind);
-	void ParseCSharpKinds(std::string kind);
-	void ParseJavaKinds(std::string kind);
+	void ParseCppKinds(string kind);
+	void ParseCSharpKinds(string kind);
+	void ParseJavaKinds(string kind);
 };
 

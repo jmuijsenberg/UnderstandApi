@@ -1,7 +1,7 @@
 #include "EntityKindParser.h"
 #include "StringComparer.h"
 
-EntityKindParser::EntityKindParser(std::string kind, UdbLanguage udbLanguage)
+EntityKindParser::EntityKindParser(string kind, UdbLanguage udbLanguage)
 {
 	switch (udbLanguage)
 	{
@@ -23,7 +23,7 @@ EntityKindParser::~EntityKindParser()
 {
 }
 
-void EntityKindParser::ParseCppKinds(std::string kind)
+void EntityKindParser::ParseCppKinds(string kind)
 {
 	StringComparer comparer(kind);
 
@@ -390,7 +390,7 @@ void EntityKindParser::ParseCppKinds(std::string kind)
 	else {}
 }
 
-void EntityKindParser::ParseCSharpKinds(std::string kind)
+void EntityKindParser::ParseCSharpKinds(string kind)
 {
 	StringComparer comparer(kind);
 
@@ -702,7 +702,7 @@ void EntityKindParser::ParseCSharpKinds(std::string kind)
 	else {}
 }
 
-void EntityKindParser::ParseJavaKinds(std::string kind)
+void EntityKindParser::ParseJavaKinds(string kind)
 {
 	StringComparer comparer(kind);
 

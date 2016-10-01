@@ -7,6 +7,8 @@
 #include "EntityKind.h"
 #include "Language.h"
 
+using namespace std;
+
 class Reference;
 class Metric;
 
@@ -14,31 +16,31 @@ class Entity
 {
 private:
 	int _id;
-	std::string _namespace;
-	std::string _name;
-	std::string _type;
+	string _namespace;
+	string _name;
+	string _type;
 	Scope _scope;
 	EntityKind _kind;
 	Language _language;
-	std::list<Reference*> _references;
-	std::list<Metric*> _metrics;
-	std::string _comment;
-	std::string _library;
-	std::string _kindText;
+	list<Reference*> _references;
+	list<Metric*> _metrics;
+	string _comment;
+	string _library;
+	string _kindText;
 public:
 	Entity(UdbEntity udbEntity, UdbLanguage udbLanguage);
 	~Entity();
 
 	int GetId() const;
-	std::string GetNamespace() const;
-	std::string GetName() const;
-	std::string GetType() const;
+	string GetNamespace() const;
+	string GetName() const;
+	string GetType() const;
 	Scope GetScope() const;
 	EntityKind GetKind() const;
 	Language GetLanguage() const;
-	std::list<Reference*> GetReferences() const;
-	std::list<Metric*> GetMetrics() const;
-	std::string GetComment() const;
-	std::string GetLibrary() const;
-	std::string GetKindText() const;
+	list<Reference*> GetReferences() const;
+	list<Metric*> GetMetrics() const;
+	string GetComment() const;
+	string GetLibrary() const;
+	string GetKindText() const;
 };
