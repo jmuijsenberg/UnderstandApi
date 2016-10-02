@@ -1,0 +1,930 @@
+<Entities>
+  <Entity name= "1" name="MyClass.cpp" type="" kind="C Code File">
+    <References>
+      <Reference kind= "C Include">
+        <Target id="2" name="MyClass.h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="5" name="MyClass" kind="C Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "2" name="MyClass.h" type="" kind="C Header File">
+    <References>
+      <Reference kind= "C Include">
+        <Target id="25" name="IMyInterface.h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Includeby">
+        <Target id="1" name="MyClass.cpp" kind="C Code File"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "3" name="UnderstandSample" type="" kind="C Namespace">
+    <References>
+      <Reference kind= "C Nameby">
+        <Target id="1" name="MyClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="2" name="MyClass.h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="27" name="MyEnum .h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="32" name="MyDerivedClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="35" name="MyStruct.h" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="16" name="MyBaseClass.h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="25" name="IMyInterface.h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="33" name="MyDerivedClass.h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="44" name="MyGenericClass.h" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "4" name="NamespaceB" type="" kind="C Namespace">
+    <References>
+      <Reference kind= "C Nameby">
+        <Target id="1" name="MyClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="5" name="MyClass" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="36" name="MyStruct" kind="C Struct Type"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="45" name="MyGenericClass" kind="C Class Type Template"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "5" name="MyClass" type="" kind="C Class Type">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Private Base">
+        <Target id="26" name="IMyInterface" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="6" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="5" name="MyClass" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="5" name="MyClass" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="1" name="MyClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="6" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "6" name="Method1" type="void" kind="C Public Member Function">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="5" name="MyClass" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="7" name="pi" kind="C Parameter"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="8" name="pb" kind="C Parameter"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="9" name="pf" kind="C Parameter"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="10" name="pd" kind="C Parameter"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="6" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="6" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="5" name="MyClass" kind="C Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "7" name="pi" type="int" kind="C Parameter">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="6" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "8" name="pb" type="bool" kind="C Parameter">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="6" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "9" name="pf" type="float" kind="C Parameter">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="6" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "10" name="pd" type="double" kind="C Parameter">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="6" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "11" name="Program.cpp" type="" kind="C Code File">
+    <References>
+      <Reference kind= "C Define">
+        <Target id="12" name="main" kind="C Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "12" name="main" type="int" kind="C Function">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="11" name="Program.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="13" name="argc" kind="C Parameter"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="14" name="argv" kind="C Parameter"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="12" name="main" kind="C Function"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="12" name="main" kind="C Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "13" name="argc" type="int" kind="C Parameter">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="12" name="main" kind="C Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "14" name="argv" type="char *[]" kind="C Parameter">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="12" name="main" kind="C Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "15" name="MyBaseClass.cpp" type="" kind="C Code File">
+    <References>
+      <Reference kind= "C Include">
+        <Target id="16" name="MyBaseClass.h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Set Init">
+        <Target id="19" name="member4" kind="C Public Member Object Static"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "16" name="MyBaseClass.h" type="" kind="C Header File">
+    <References>
+      <Reference kind= "C Include">
+        <Target id="27" name="MyEnum .h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Includeby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Includeby">
+        <Target id="33" name="MyDerivedClass.h" kind="C Header File"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "17" name="NamespaceA" type="" kind="C Namespace">
+    <References>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="5" name="MyClass" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="32" name="MyDerivedClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="26" name="IMyInterface" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="42" name="MyDerivedClass" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "18" name="MyBaseClass" type="" kind="C Abstract Class Type">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="21" name="member1" kind="C Private Member Object"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="39" name="member2" kind="C Protected Member Object"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="23" name="member3" kind="C Public Member Object"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="19" name="member4" kind="C Public Member Object Static"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="40" name="member5" kind="C Public Member Object"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="20" name="Method1" kind="C Private Member Function"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="34" name="Method2" kind="C Protected Member Function Virtual"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="22" name="Method3" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="24" name="Method4" kind="C Public Member Function Static"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="19" name="member4" kind="C Public Member Object Static"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="20" name="Method1" kind="C Private Member Function"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="22" name="Method3" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="24" name="Method4" kind="C Public Member Function Static"/>
+      </Reference>
+      <Reference kind= "C Nameby">
+        <Target id="32" name="MyDerivedClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="34" name="Method2" kind="C Protected Member Function Virtual"/>
+      </Reference>
+      <Reference kind= "C Public Derive">
+        <Target id="42" name="MyDerivedClass" kind="C Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "19" name="member4" type="bool" kind="C Public Member Object Static">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Setby Init">
+        <Target id="15" name="MyBaseClass.cpp" kind="C Code File"/>
+      </Reference>
+      <Reference kind= "C Useby Return">
+        <Target id="24" name="Method4" kind="C Public Member Function Static"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "20" name="Method1" type="bool" kind="C Private Member Function">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Use Return">
+        <Target id="21" name="member1" kind="C Private Member Object"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="20" name="Method1" kind="C Private Member Function"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="20" name="Method1" kind="C Private Member Function"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "21" name="member1" type="bool" kind="C Private Member Object">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Useby Return">
+        <Target id="20" name="Method1" kind="C Private Member Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "22" name="Method3" type="float" kind="C Public Member Function">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Use Return">
+        <Target id="23" name="member3" kind="C Public Member Object"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="22" name="Method3" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="22" name="Method3" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "23" name="member3" type="float" kind="C Public Member Object">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Useby Return">
+        <Target id="22" name="Method3" kind="C Public Member Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "24" name="Method4" type="bool" kind="C Public Member Function Static">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Use Return">
+        <Target id="19" name="member4" kind="C Public Member Object Static"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="24" name="Method4" kind="C Public Member Function Static"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="24" name="Method4" kind="C Public Member Function Static"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "25" name="IMyInterface.h" type="" kind="C Header File">
+    <References>
+      <Reference kind= "C Declare">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Includeby">
+        <Target id="2" name="MyClass.h" kind="C Header File"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "26" name="IMyInterface" type="" kind="C Class Type">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="41" name="Method1" kind="C Unresolved Public Member Function"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="26" name="IMyInterface" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="26" name="IMyInterface" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C Private Derive">
+        <Target id="5" name="MyClass" kind="C Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "27" name="MyEnum .h" type="" kind="C Header File">
+    <References>
+      <Reference kind= "C Declare">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Includeby">
+        <Target id="16" name="MyBaseClass.h" kind="C Header File"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "28" name="MyEnum" type="" kind="C Enum Type">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="29" name="EnumVal1" kind="C Enumerator"/>
+      </Reference>
+      <Reference kind= "C Typedby Implicit">
+        <Target id="29" name="EnumVal1" kind="C Enumerator"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="30" name="EnumVal2" kind="C Enumerator"/>
+      </Reference>
+      <Reference kind= "C Typedby Implicit">
+        <Target id="30" name="EnumVal2" kind="C Enumerator"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="31" name="EnumVal3" kind="C Enumerator"/>
+      </Reference>
+      <Reference kind= "C Typedby Implicit">
+        <Target id="31" name="EnumVal3" kind="C Enumerator"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+      <Reference kind= "C Typedby">
+        <Target id="40" name="member5" kind="C Public Member Object"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "29" name="EnumVal1" type="" kind="C Enumerator">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+      <Reference kind= "C Typed Implicit">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "30" name="EnumVal2" type="" kind="C Enumerator">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+      <Reference kind= "C Typed Implicit">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "31" name="EnumVal3" type="" kind="C Enumerator">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+      <Reference kind= "C Typed Implicit">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "32" name="MyDerivedClass.cpp" type="" kind="C Code File">
+    <References>
+      <Reference kind= "C Include">
+        <Target id="33" name="MyDerivedClass.h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Name">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "33" name="MyDerivedClass.h" type="" kind="C Header File">
+    <References>
+      <Reference kind= "C Include">
+        <Target id="16" name="MyBaseClass.h" kind="C Header File"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Includeby">
+        <Target id="32" name="MyDerivedClass.cpp" kind="C Code File"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "34" name="Method2" type="void" kind="C Protected Member Function Virtual">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="34" name="Method2" kind="C Protected Member Function Virtual"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="34" name="Method2" kind="C Protected Member Function Virtual"/>
+      </Reference>
+      <Reference kind= "C Declarein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Overriddenby">
+        <Target id="43" name="Method2" kind="C Unresolved Protected Member Function Virtual"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "35" name="MyStruct.h" type="" kind="C Code File">
+    <References>
+      <Reference kind= "C Declare">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "36" name="MyStruct" type="" kind="C Struct Type">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="37" name="a" kind="C Public Member Object"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="38" name="b" kind="C Public Member Object"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="36" name="MyStruct" kind="C Struct Type"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="36" name="MyStruct" kind="C Struct Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "37" name="a" type="int" kind="C Public Member Object">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="36" name="MyStruct" kind="C Struct Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "38" name="b" type="int" kind="C Public Member Object">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="36" name="MyStruct" kind="C Struct Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "39" name="member2" type="int" kind="C Protected Member Object">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "40" name="member5" type="NamespaceB::MyEnum" kind="C Public Member Object">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Typed">
+        <Target id="28" name="MyEnum" kind="C Enum Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "41" name="Method1" type="void" kind="C Unresolved Public Member Function">
+    <References>
+      <Reference kind= "C Declarein">
+        <Target id="26" name="IMyInterface" kind="C Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "42" name="MyDerivedClass" type="" kind="C Class Type">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="17" name="NamespaceA" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Public Base">
+        <Target id="18" name="MyBaseClass" kind="C Abstract Class Type"/>
+      </Reference>
+      <Reference kind= "C Declare">
+        <Target id="43" name="Method2" kind="C Unresolved Protected Member Function Virtual"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="42" name="MyDerivedClass" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="42" name="MyDerivedClass" kind="C Class Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "43" name="Method2" type="void" kind="C Unresolved Protected Member Function Virtual">
+    <References>
+      <Reference kind= "C Declarein">
+        <Target id="42" name="MyDerivedClass" kind="C Class Type"/>
+      </Reference>
+      <Reference kind= "C Overrides">
+        <Target id="34" name="Method2" kind="C Protected Member Function Virtual"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "44" name="MyGenericClass.h" type="" kind="C Code File">
+    <References>
+      <Reference kind= "C Declare">
+        <Target id="3" name="UnderstandSample" kind="C Namespace"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "45" name="MyGenericClass" type="" kind="C Class Type Template">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="4" name="NamespaceB" kind="C Namespace"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="46" name="T" kind="C TemplateParameter Type"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="47" name="member1" kind="C Private Member Object"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="48" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="45" name="MyGenericClass" kind="C Class Type Template"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="45" name="MyGenericClass" kind="C Class Type Template"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "46" name="T" type="typename" kind="C TemplateParameter Type">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="45" name="MyGenericClass" kind="C Class Type Template"/>
+      </Reference>
+      <Reference kind= "C Typedby">
+        <Target id="47" name="member1" kind="C Private Member Object"/>
+      </Reference>
+      <Reference kind= "C Typedby">
+        <Target id="49" name="pt" kind="C Parameter"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "47" name="member1" type="T" kind="C Private Member Object">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="45" name="MyGenericClass" kind="C Class Type Template"/>
+      </Reference>
+      <Reference kind= "C Typed">
+        <Target id="46" name="T" kind="C TemplateParameter Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "48" name="Method1" type="void" kind="C Public Member Function">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="45" name="MyGenericClass" kind="C Class Type Template"/>
+      </Reference>
+      <Reference kind= "C Define">
+        <Target id="49" name="pt" kind="C Parameter"/>
+      </Reference>
+      <Reference kind= "C End">
+        <Target id="48" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C Endby">
+        <Target id="48" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "49" name="pt" type="T" kind="C Parameter">
+    <References>
+      <Reference kind= "C Definein">
+        <Target id="48" name="Method1" kind="C Public Member Function"/>
+      </Reference>
+      <Reference kind= "C Typed">
+        <Target id="46" name="T" kind="C TemplateParameter Type"/>
+      </Reference>
+    </References>
+  </Entity>
+</Entities>

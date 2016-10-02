@@ -1,0 +1,874 @@
+<Entities>
+  <Entity name= "1" name="Program.java" type="" kind="Java File">
+    <References>
+      <Reference kind= "Java Define">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="2" name="namespaceb.Program" kind="Java Class Type Default Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "2" name="namespaceb.Program" type="" kind="Java Class Type Default Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="1" name="Program.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Containin">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="3" name="Program.main" kind="Java Static Method Public Main Member"/>
+      </Reference>
+      <Reference kind= "Java Extend Couple Implicit">
+        <Target id="8" name="lang.Object" kind="Java Unresolved Type"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="2" name="namespaceb.Program" kind="Java Class Type Default Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="2" name="namespaceb.Program" kind="Java Class Type Default Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "3" name="Program.main" type="void" kind="Java Static Method Public Main Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="2" name="namespaceb.Program" kind="Java Class Type Default Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="4" name="args" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="3" name="Program.main" kind="Java Static Method Public Main Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="3" name="Program.main" kind="Java Static Method Public Main Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "4" name="args" type="String[]" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="3" name="Program.main" kind="Java Static Method Public Main Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="5" name="String" kind="Java Unknown Class Type Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "5" name="String" type="" kind="Java Unknown Class Type Member">
+    <References>
+      <Reference kind= "Java Typedby">
+        <Target id="4" name="args" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java Extend Couple Implicit">
+        <Target id="8" name="lang.Object" kind="Java Unresolved Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "6" name="understandsample" type="" kind="Java Package">
+    <References>
+      <Reference kind= "Java Declarein">
+        <Target id="48" name="MyGenericClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="41" name="MyClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="34" name="IMyInterface.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="25" name="MyBaseClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="12" name="understandsample.namespacea" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="15" name="MyEnum.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="9" name="MyDerivedClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="12" name="understandsample.namespacea" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="1" name="Program.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "7" name="understandsample.namespaceb" type="" kind="Java Package">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="34" name="IMyInterface.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Contain">
+        <Target id="35" name="namespaceb.IMyInterface" kind="Java Interface Type Public"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Definein">
+        <Target id="1" name="Program.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Contain">
+        <Target id="2" name="namespaceb.Program" kind="Java Class Type Default Member"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Definein">
+        <Target id="15" name="MyEnum.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Contain">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Importby Demand">
+        <Target id="25" name="MyBaseClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Definein">
+        <Target id="41" name="MyClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Contain">
+        <Target id="42" name="namespaceb.MyClass" kind="Java Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Definein">
+        <Target id="48" name="MyGenericClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Contain">
+        <Target id="49" name="namespaceb.MyGenericClass" kind="Java Generic Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "8" name="lang.Object" type="" kind="Java Unresolved Type">
+    <References>
+      <Reference kind= "Java Extendby Coupleby Implicit">
+        <Target id="2" name="namespaceb.Program" kind="Java Class Type Default Member"/>
+      </Reference>
+      <Reference kind= "Java Extendby Coupleby Implicit">
+        <Target id="5" name="String" kind="Java Unknown Class Type Member"/>
+      </Reference>
+      <Reference kind= "Java Extendby Coupleby Implicit">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Extendby Coupleby Implicit">
+        <Target id="42" name="namespaceb.MyClass" kind="Java Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Extendby Coupleby Implicit">
+        <Target id="49" name="namespaceb.MyGenericClass" kind="Java Generic Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Extendby Coupleby Implicit">
+        <Target id="50" name="MyGenericClass.T" kind="Java Class Type TypeVariable"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "9" name="MyDerivedClass.java" type="" kind="Java File">
+    <References>
+      <Reference kind= "Java Define">
+        <Target id="12" name="understandsample.namespacea" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="10" name="namespacea.MyDerivedClass" kind="Java Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "10" name="namespacea.MyDerivedClass" type="" kind="Java Class Type Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="9" name="MyDerivedClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Containin">
+        <Target id="12" name="understandsample.namespacea" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="11" name="MyDerivedClass.Method2" kind="Java Method Protected Member"/>
+      </Reference>
+      <Reference kind= "Java Extend Couple">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="10" name="namespacea.MyDerivedClass" kind="Java Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="10" name="namespacea.MyDerivedClass" kind="Java Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "11" name="MyDerivedClass.Method2" type="void" kind="Java Method Protected Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="10" name="namespacea.MyDerivedClass" kind="Java Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Override">
+        <Target id="14" name="MyBaseClass.Method2" kind="Java Abstract Method Protected Member"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="11" name="MyDerivedClass.Method2" kind="Java Method Protected Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="11" name="MyDerivedClass.Method2" kind="Java Method Protected Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "12" name="understandsample.namespacea" type="" kind="Java Package">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="25" name="MyBaseClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Contain">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Definein">
+        <Target id="9" name="MyDerivedClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Contain">
+        <Target id="10" name="namespacea.MyDerivedClass" kind="Java Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Declarein">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "13" name="namespacea.MyBaseClass" type="" kind="Java Abstract Class Type Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="25" name="MyBaseClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Containin">
+        <Target id="12" name="understandsample.namespacea" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="29" name="MyBaseClass.member1" kind="Java Variable Private Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="30" name="MyBaseClass.member2" kind="Java Variable Protected Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="31" name="MyBaseClass.member3" kind="Java Variable Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="32" name="MyBaseClass.member4" kind="Java Static Variable Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="33" name="MyBaseClass.member5" kind="Java Variable Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="26" name="MyBaseClass.Method1" kind="Java Method Private Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="14" name="MyBaseClass.Method2" kind="Java Abstract Method Protected Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="27" name="MyBaseClass.Method3" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="28" name="MyBaseClass.Method4" kind="Java Static Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Extend Couple Implicit">
+        <Target id="8" name="lang.Object" kind="Java Unresolved Type"/>
+      </Reference>
+      <Reference kind= "Java Couple">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Extendby Coupleby">
+        <Target id="10" name="namespacea.MyDerivedClass" kind="Java Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "14" name="MyBaseClass.Method2" type="void" kind="Java Abstract Method Protected Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="14" name="MyBaseClass.Method2" kind="Java Abstract Method Protected Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="14" name="MyBaseClass.Method2" kind="Java Abstract Method Protected Member"/>
+      </Reference>
+      <Reference kind= "Java Overrideby">
+        <Target id="11" name="MyDerivedClass.Method2" kind="Java Method Protected Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "15" name="MyEnum.java" type="" kind="Java File">
+    <References>
+      <Reference kind= "Java Define">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "16" name="namespaceb.MyEnum" type="" kind="Java Enum Class Type Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="15" name="MyEnum.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Containin">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="20" name="MyEnum.EnumVal1" kind="Java Variable EnumConstant Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="21" name="MyEnum.EnumVal2" kind="Java Variable EnumConstant Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="22" name="MyEnum.EnumVal3" kind="Java Variable EnumConstant Public Member"/>
+      </Reference>
+      <Reference kind= "Java Extend Couple Implicit">
+        <Target id="23" name="lang.Enum" kind="Java Unresolved Type"/>
+      </Reference>
+      <Reference kind= "Java Define Implicit">
+        <Target id="19" name="MyEnum.values" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define Implicit">
+        <Target id="17" name="MyEnum.valueOf" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Couple">
+        <Target id="24" name="lang.String" kind="Java Unresolved Type"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typedby">
+        <Target id="17" name="MyEnum.valueOf" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typedby">
+        <Target id="19" name="MyEnum.values" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typedby">
+        <Target id="20" name="MyEnum.EnumVal1" kind="Java Variable EnumConstant Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typedby">
+        <Target id="21" name="MyEnum.EnumVal2" kind="Java Variable EnumConstant Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typedby">
+        <Target id="22" name="MyEnum.EnumVal3" kind="Java Variable EnumConstant Public Member"/>
+      </Reference>
+      <Reference kind= "Java Coupleby">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typedby">
+        <Target id="33" name="MyBaseClass.member5" kind="Java Variable Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "17" name="MyEnum.valueOf" type="" kind="Java Method Public Member">
+    <References>
+      <Reference kind= "Java Definein Implicit">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define Implicit">
+        <Target id="18" name="s" kind="Java Parameter"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "18" name="s" type="" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein Implicit">
+        <Target id="17" name="MyEnum.valueOf" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="24" name="lang.String" kind="Java Unresolved Type"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "19" name="MyEnum.values" type="" kind="Java Method Public Member">
+    <References>
+      <Reference kind= "Java Definein Implicit">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "20" name="MyEnum.EnumVal1" type="" kind="Java Variable EnumConstant Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "21" name="MyEnum.EnumVal2" type="" kind="Java Variable EnumConstant Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "22" name="MyEnum.EnumVal3" type="" kind="Java Variable EnumConstant Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "23" name="lang.Enum" type="" kind="Java Unresolved Type">
+    <References>
+      <Reference kind= "Java Extendby Coupleby Implicit">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "24" name="lang.String" type="" kind="Java Unresolved Type">
+    <References>
+      <Reference kind= "Java Coupleby">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typedby">
+        <Target id="18" name="s" kind="Java Parameter"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "25" name="MyBaseClass.java" type="" kind="Java File">
+    <References>
+      <Reference kind= "Java Define">
+        <Target id="12" name="understandsample.namespacea" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Import Demand">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "26" name="MyBaseClass.Method1" type="boolean" kind="Java Method Private Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Use Return">
+        <Target id="29" name="MyBaseClass.member1" kind="Java Variable Private Member"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="26" name="MyBaseClass.Method1" kind="Java Method Private Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="26" name="MyBaseClass.Method1" kind="Java Method Private Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "27" name="MyBaseClass.Method3" type="float" kind="Java Method Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Use Return">
+        <Target id="31" name="MyBaseClass.member3" kind="Java Variable Public Member"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="27" name="MyBaseClass.Method3" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="27" name="MyBaseClass.Method3" kind="Java Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "28" name="MyBaseClass.Method4" type="boolean" kind="Java Static Method Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Use Return">
+        <Target id="32" name="MyBaseClass.member4" kind="Java Static Variable Public Member"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="28" name="MyBaseClass.Method4" kind="Java Static Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="28" name="MyBaseClass.Method4" kind="Java Static Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "29" name="MyBaseClass.member1" type="boolean" kind="Java Variable Private Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Useby Return">
+        <Target id="26" name="MyBaseClass.Method1" kind="Java Method Private Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "30" name="MyBaseClass.member2" type="int" kind="Java Variable Protected Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "31" name="MyBaseClass.member3" type="float" kind="Java Variable Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Useby Return">
+        <Target id="27" name="MyBaseClass.Method3" kind="Java Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "32" name="MyBaseClass.member4" type="boolean" kind="Java Static Variable Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Useby Return">
+        <Target id="28" name="MyBaseClass.Method4" kind="Java Static Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "33" name="MyBaseClass.member5" type="MyEnum" kind="Java Variable Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="13" name="namespacea.MyBaseClass" kind="Java Abstract Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="16" name="namespaceb.MyEnum" kind="Java Enum Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "34" name="IMyInterface.java" type="" kind="Java File">
+    <References>
+      <Reference kind= "Java Define">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="35" name="namespaceb.IMyInterface" kind="Java Interface Type Public"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "35" name="namespaceb.IMyInterface" type="" kind="Java Interface Type Public">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="34" name="IMyInterface.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Containin">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="36" name="IMyInterface.Method1" kind="Java Abstract Method Default Member"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="35" name="namespaceb.IMyInterface" kind="Java Interface Type Public"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="35" name="namespaceb.IMyInterface" kind="Java Interface Type Public"/>
+      </Reference>
+      <Reference kind= "Java Implementby Coupleby">
+        <Target id="42" name="namespaceb.MyClass" kind="Java Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "36" name="IMyInterface.Method1" type="void" kind="Java Abstract Method Default Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="35" name="namespaceb.IMyInterface" kind="Java Interface Type Public"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="40" name="pi" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="37" name="pb" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="39" name="pf" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="38" name="pd" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="36" name="IMyInterface.Method1" kind="Java Abstract Method Default Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="36" name="IMyInterface.Method1" kind="Java Abstract Method Default Member"/>
+      </Reference>
+      <Reference kind= "Java Overrideby">
+        <Target id="43" name="MyClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "37" name="pb" type="boolean" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="36" name="IMyInterface.Method1" kind="Java Abstract Method Default Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "38" name="pd" type="double" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="36" name="IMyInterface.Method1" kind="Java Abstract Method Default Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "39" name="pf" type="float" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="36" name="IMyInterface.Method1" kind="Java Abstract Method Default Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "40" name="pi" type="int" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="36" name="IMyInterface.Method1" kind="Java Abstract Method Default Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "41" name="MyClass.java" type="" kind="Java File">
+    <References>
+      <Reference kind= "Java Define">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="42" name="namespaceb.MyClass" kind="Java Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "42" name="namespaceb.MyClass" type="" kind="Java Class Type Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="41" name="MyClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Containin">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="43" name="MyClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Implement Couple">
+        <Target id="35" name="namespaceb.IMyInterface" kind="Java Interface Type Public"/>
+      </Reference>
+      <Reference kind= "Java Extend Couple Implicit">
+        <Target id="8" name="lang.Object" kind="Java Unresolved Type"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="42" name="namespaceb.MyClass" kind="Java Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="42" name="namespaceb.MyClass" kind="Java Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "43" name="MyClass.Method1" type="void" kind="Java Method Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="42" name="namespaceb.MyClass" kind="Java Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="47" name="pi" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="44" name="pb" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="46" name="pf" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="45" name="pd" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java Override">
+        <Target id="36" name="IMyInterface.Method1" kind="Java Abstract Method Default Member"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="43" name="MyClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="43" name="MyClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "44" name="pb" type="boolean" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="43" name="MyClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "45" name="pd" type="double" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="43" name="MyClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "46" name="pf" type="float" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="43" name="MyClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "47" name="pi" type="int" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="43" name="MyClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "48" name="MyGenericClass.java" type="" kind="Java File">
+    <References>
+      <Reference kind= "Java Define">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Declare">
+        <Target id="6" name="understandsample" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="49" name="namespaceb.MyGenericClass" kind="Java Generic Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "49" name="namespaceb.MyGenericClass" type="" kind="Java Generic Class Type Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="48" name="MyGenericClass.java" kind="Java File"/>
+      </Reference>
+      <Reference kind= "Java Containin">
+        <Target id="7" name="understandsample.namespaceb" kind="Java Package"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="50" name="MyGenericClass.T" kind="Java Class Type TypeVariable"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="53" name="MyGenericClass.member1" kind="Java Variable Private Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="51" name="MyGenericClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Extend Couple Implicit">
+        <Target id="8" name="lang.Object" kind="Java Unresolved Type"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="49" name="namespaceb.MyGenericClass" kind="Java Generic Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="49" name="namespaceb.MyGenericClass" kind="Java Generic Class Type Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "50" name="MyGenericClass.T" type="" kind="Java Class Type TypeVariable">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="49" name="namespaceb.MyGenericClass" kind="Java Generic Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Extend Couple Implicit">
+        <Target id="8" name="lang.Object" kind="Java Unresolved Type"/>
+      </Reference>
+      <Reference kind= "Java Typedby">
+        <Target id="52" name="pt" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java Typedby">
+        <Target id="53" name="MyGenericClass.member1" kind="Java Variable Private Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "51" name="MyGenericClass.Method1" type="void" kind="Java Method Public Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="49" name="namespaceb.MyGenericClass" kind="Java Generic Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Define">
+        <Target id="52" name="pt" kind="Java Parameter"/>
+      </Reference>
+      <Reference kind= "Java End">
+        <Target id="51" name="MyGenericClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Endby">
+        <Target id="51" name="MyGenericClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "52" name="pt" type="T" kind="Java Parameter">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="51" name="MyGenericClass.Method1" kind="Java Method Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="50" name="MyGenericClass.T" kind="Java Class Type TypeVariable"/>
+      </Reference>
+    </References>
+  </Entity>
+  <Entity name= "53" name="MyGenericClass.member1" type="T" kind="Java Variable Private Member">
+    <References>
+      <Reference kind= "Java Definein">
+        <Target id="49" name="namespaceb.MyGenericClass" kind="Java Generic Class Type Public Member"/>
+      </Reference>
+      <Reference kind= "Java Typed">
+        <Target id="50" name="MyGenericClass.T" kind="Java Class Type TypeVariable"/>
+      </Reference>
+    </References>
+  </Entity>
+</Entities>

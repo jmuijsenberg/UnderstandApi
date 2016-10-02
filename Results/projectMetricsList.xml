@@ -1,0 +1,18 @@
+<ProjectMetrics>
+  <ProjectMetric name="CountDeclClass" type="Integer" value="6"/>
+  <ProjectMetric name="CountDeclFile" type="Integer" value="12"/>
+  <ProjectMetric name="CountDeclFunction" type="Integer" value="7"/>
+  <ProjectMetric name="CountLine" type="Integer" value="138"/>
+  <ProjectMetric name="CountLineBlank" type="Integer" value="18"/>
+  <ProjectMetric name="CountLineCode" type="Integer" value="103"/>
+  <ProjectMetric name="CountLineCodeDecl" type="Integer" value="65"/>
+  <ProjectMetric name="CountLineCodeExe" type="Integer" value="3"/>
+  <ProjectMetric name="CountLineComment" type="Integer" value="17"/>
+  <ProjectMetric name="CountLineInactive" type="Integer" value="0"/>
+  <ProjectMetric name="CountLinePreprocessor" type="Integer" value="0"/>
+  <ProjectMetric name="CountSemicolon" type="Integer" value="30"/>
+  <ProjectMetric name="CountStmt" type="Integer" value="52"/>
+  <ProjectMetric name="CountStmtDecl" type="Integer" value="49"/>
+  <ProjectMetric name="CountStmtExe" type="Integer" value="3"/>
+  <ProjectMetric name="RatioCommentToCode" type="Double" value="0.165049"/>
+</ProjectMetrics>

@@ -33,10 +33,9 @@ void ListEntityKinds(Project project, string outputFilename)
 	udbListKindEntity(&entityKinds, &size);
 
 	for (int i = 0; i < size; i++) {
-		outputFile << "  <EntityKind>\n";
-		outputFile << "    <Id>" << entityKinds[i] << "</Id>\n";
-		outputFile << "    <Name>" << udbKindLongname(entityKinds[i]) << "</Name>\n";
-		outputFile << "  </EntityKind>\n";
+		outputFile << "  <EntityKind id=\"" << entityKinds[i] << 
+			                     "\" name=\"" << udbKindLongname(entityKinds[i]) << 
+			                     "\"/>";
 	}
 
 	udbListKindFree(entityKinds);
@@ -58,10 +57,9 @@ void ListReferenceKinds(Project project, string outputFilename)
 	udbListKindReference(&referenceKinds, &size);
 
 	for (int i = 0; i < size; i++) {
-		outputFile << "  <ReferenceKind>\n";
-		outputFile << "    <Id>" << referenceKinds[i] << "</Id>\n";
-		outputFile << "    <Name>" << udbKindLongname(referenceKinds[i]) << "</Name>\n";
-		outputFile << "  </ReferenceKind>\n";
+		outputFile << "  <EntityKind id=\"" << referenceKinds[i] << 
+			                     "\" name=\"" << udbKindLongname(referenceKinds[i]) << 
+			                     "\"/>";
 	}
 	
 	udbListKindFree(referenceKinds);
@@ -84,12 +82,10 @@ void ListProjectMetrics(Project project, string outputFilename)
 		Metric* pMetric = *it;
 		string valueType = pMetric->IsInteger() ? "Integer" : "Double";
 
-		outputFile << "  <ProjectMetric>\n";
-		outputFile << "    <Name>" << pMetric->GetName() << "</Name>\n";
-		outputFile << "    <Description>" << pMetric->GetDescription() << "</Description>\n";
-		outputFile << "    <Type>" << valueType << "</Type>\n";
-		outputFile << "    <Value>%f</Value>\n", pMetric->GetValue();
-		outputFile << "  </ProjectMetric>\n";
+		outputFile << "  <ProjectMetric name=\"" << pMetric->GetName() << 
+			                        "\" type=\"" << valueType << 
+			                        "\" value=\"" << pMetric->GetValue() << 
+			                        "\"/>";
 
 		delete pMetric;
 	}
@@ -111,11 +107,11 @@ void ListEntities(Project project, string outputFilename)
 	{
 		Entity* pEntity = *eit;
 
-		outputFile << "  <Entity>\n";
-		outputFile << "    <Id>" << pEntity->GetId() << "</Id>\n";
-		outputFile << "    <Name>" << pEntity->GetName() << "</Name>\n";
-		outputFile << "    <Type>" << pEntity->GetType() << "</Type>\n";
-		outputFile << "    <Kind>" << pEntity->GetKindText() << "</Kind>\n";
+		outputFile << "  <Entity name= \"" << pEntity->GetId() <<
+			                 "\" name=\"" << pEntity->GetName() <<
+			                 "\" type=\"" << pEntity->GetType() <<
+			                 "\" kind=\"" << pEntity->GetKindText() << 
+			                 "\">\n";
 
 		outputFile << "    <References>\n";
 		list<Reference*> references = pEntity->GetReferences();
@@ -123,45 +119,40 @@ void ListEntities(Project project, string outputFilename)
 		{
 			Reference* pReference = *rit;
 
-			outputFile << "      <Reference>\n";
-			outputFile << "        <SourceId>" << pReference->GetSourceEntityId() << "</SourceId>\n";
-			outputFile << "        <SourceName>" << pReference->GetSourceEntityName() << "</SourceName>\n";
-			outputFile << "        <SourceKind>" << pReference->GetSourceEntityKindName() << "</SourceKind>\n";
-			outputFile << "        <TargetId>" << pReference->GetTargetEntityId() << "</TargetId>\n";
-			outputFile << "        <TargetName>" << pReference->GetTargetEntityName() << "</TargetName>\n";
-			outputFile << "        <TargetKind>" << pReference->GetTargetEntityKindName() << "</TargetKind>\n";
-			outputFile << "        <ReferencKind>" << pReference->GetKindText() << "</ReferencKind>\n";
-			outputFile << "        <File>" << pReference->GetFile() << "</File>\n";
-			outputFile << "        <Line>" << pReference->GetLine() << "</Line>\n";
-			outputFile << "        <Column>" << pReference->GetColumn() << "</Column>\n";
+			outputFile << "      <Reference kind= \"" << pReference->GetKindText() <<
+				                        //"\" file=\"" << pReference->GetFile() <<
+				                        //"\" line=\"" << pReference->GetLine() <<
+				                        //"\" column=\"" << pReference->GetColumn() << 
+				                        "\">\n";
+
+			outputFile << "        <Target id=\"" << pReference->GetTargetEntityId() <<
+				                       "\" name=\"" << pReference->GetTargetEntityName() <<
+				                       "\" kind=\"" << pReference->GetTargetEntityKindName() << 
+				                       "\"/>\n";
 			outputFile << "      </Reference>\n";
 
 			delete pReference;
 		}
 		outputFile << "    </References>\n";
 
-		outputFile << "    <Metrics>\n";
-		list<Metric*> entityMetrics = pEntity->GetMetrics();
-		for (list<Metric*>::iterator mit = entityMetrics.begin(); mit != entityMetrics.end(); ++mit)
-		{
-			Metric* pMetric = *mit;
-			string valueType = pMetric->IsInteger() ? "Integer" : "Double";
-			outputFile << "      <Metric>\n";
-			outputFile << "        <Name>" << pMetric->GetName() << "</Name>\n";
-			outputFile << "        <Description>" << pMetric->GetDescription() << "</Description>\n";
-			outputFile << "        <Type>" << valueType << "</Type>\n";
-			outputFile << "        <Value>" << pMetric->GetValue() << "</Value>\n";
-			outputFile << "      </Metric>\n";
+		//outputFile << "    <Metrics>\n";
+		//list<Metric*> entityMetrics = pEntity->GetMetrics();
+		//for (list<Metric*>::iterator mit = entityMetrics.begin(); mit != entityMetrics.end(); ++mit)
+		//{
+		//	Metric* pMetric = *mit;
+		//  outputFile << "  <ProjectMetric name=\"" << pMetric->GetName() <<
+		//	"\" type=\"" << valueType <<
+		//	"\" value=\"" << pMetric->GetValue() << "\"/>";
+		//
+		//	delete pMetric;
+		//}
+		//outputFile << "    </Metrics>\n";
 
-			delete pMetric;
-		}
-		outputFile << "    </Metrics>\n";
 		outputFile << "  </Entity>\n";
-
 		delete pEntity;
 	}
 
-	printf("</Entities>\n");
+	outputFile << "</Entities>\n";
 
 	outputFile.close();
 }
