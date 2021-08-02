@@ -10,3 +10,5 @@ The archive contains:
 * The resulting XML output files.
 
 Note: Add C:\Program Files\SciTools\bin\pc-win64 to PATH env variable
+
+Updated 2 aug 2021
