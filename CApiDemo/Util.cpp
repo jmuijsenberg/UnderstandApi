@@ -22,7 +22,6 @@ Language Util::GetLanguage(UdbLanguage udbLanguage)
 	case 	Udb_language_Pascal:
 	case 	Udb_language_Plm:
 	case 	Udb_language_Python:
-	case 	Udb_language_Verilog:
 	case 	Udb_language_Vhdl:
 	case 	Udb_language_Web:
 		return OtherLanguage;

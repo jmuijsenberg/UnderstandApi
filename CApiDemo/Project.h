@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 #include <list>
 #include "Language.h"
 

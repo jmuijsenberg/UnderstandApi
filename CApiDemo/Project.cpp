@@ -22,10 +22,6 @@ bool Project::Open()
 		switch (status) {
 		case Udb_statusDBAlreadyOpen:
 			printf("database already open\n");                    break;
-		case Udb_statusDBChanged:
-			printf("database has been changed\n");                break;
-		case Udb_statusDBCorrupt:
-			printf("database is corrupt\n");                      break;
 		case Udb_statusDBOldVersion:
 			printf("database is old version\n");                  break;
 		case Udb_statusDBUnknownVersion:
@@ -34,18 +30,6 @@ bool Project::Open()
 			printf("unable to locate file\n");                    break;
 		case Udb_statusNoApiLicense:
 			printf("no Understand license available\n");          break;
-		case Udb_statusNoApiLicenseAda:
-			printf("no Understand Ada license available\n");      break;
-		case Udb_statusNoApiLicenseC:
-			printf("no Understand C license available\n");        break;
-		case Udb_statusNoApiLicenseFtn:
-			printf("no Undertstand Fortran license available\n"); break;
-		case Udb_statusNoApiLicenseJava:
-			printf("no Understand Java license available\n");     break;
-		case Udb_statusNoApiLicenseJovial:
-			printf("no Understand Jovial license available\n");   break;
-		case Udb_statusNoApiLicensePascal:
-			printf("no Understand Pascal license available\n");   break;
 		default:
 			printf("unable to access database\n");                break;
 		}
@@ -74,13 +58,15 @@ string Project::GetName() const
 {
 	assert(_isOpen);
 
-	return udbDbName();}
+	return udbDbName();
+}
 
 string Project::GetBuild() const
 {
 	assert(_isOpen);
 
-	return udbInfoBuild();}
+	return udbInfoBuild();
+}
 
 list<Entity*> Project::GetFiles() const
 {
@@ -110,7 +96,7 @@ list<Entity*> Project::GetEntities() const
 
 	UdbEntity *ents;
 	int entsSize;
-	udbListEntity(&ents, &entsSize);
+	udbListEntity("",  & ents, &entsSize);
 
 	for (int i = 0; i < entsSize; i++) {
 		Entity* pEntity = new Entity(ents[i], udbEntityLanguage(ents[i]));

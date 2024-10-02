@@ -28,7 +28,7 @@ Entity::Entity(UdbEntity udbEntity, UdbLanguage udbLanguage)
 
 	_comment = udbComment(udbEntity, Udb_commentStyleBefore, Udb_commentFormatDefault, nullptr);
 
-	_library = udbLibraryName(udbEntityLibrary(udbEntity));	UdbMetric *metrics;
+	UdbMetric *metrics;
 	int size = udbMetricListEntity(udbEntity, &metrics);
 
 	for (int j = 0; j < size; j++)
@@ -89,11 +89,6 @@ list<Metric*> Entity::GetMetrics() const
 string Entity::GetComment() const
 {
 	return _comment;
-}
-
-string Entity::GetLibrary() const
-{
-	return _library;
 }
 
 string Entity::GetKindText() const

@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 #include <list>
 
 #include "udb.h" 
@@ -25,7 +27,6 @@ private:
 	list<Reference*> _references;
 	list<Metric*> _metrics;
 	string _comment;
-	string _library;
 	string _kindText;
 public:
 	Entity(UdbEntity udbEntity, UdbLanguage udbLanguage);
@@ -41,6 +42,5 @@ public:
 	list<Reference*> GetReferences() const;
 	list<Metric*> GetMetrics() const;
 	string GetComment() const;
-	string GetLibrary() const;
 	string GetKindText() const;
 };
