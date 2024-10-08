@@ -1,17 +1,17 @@
-#include "StringComparer.h"
+#include "stringComparer.h"
 
 
 
-StringComparer::StringComparer(string text)
+stringComparer::stringComparer(std::string text)
 {
 	_text = text;
 }
 
-StringComparer::~StringComparer()
+stringComparer::~stringComparer()
 {
 }
 
-bool StringComparer::ContainsText(string substring) const
+bool stringComparer::ContainsText(std::string substring) const
 {
-	return (_text.find(substring) != string::npos);
+	return (_text.find(substring) != std::string::npos);
 }

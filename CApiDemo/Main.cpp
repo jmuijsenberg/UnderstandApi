@@ -10,7 +10,7 @@
 
 using namespace std;
 
-void ShowError(string error)
+void ShowError(std::string error)
 {
 	cout << "Error: " << error << "\n";
 	
@@ -21,7 +21,7 @@ void ShowError(string error)
 	cout << " CAiDemo <understandfilename> -listProjectMetrics -f <outputfile> - Lists project metrics\n";
 }
 
-void ListEntityKinds(Project project, string outputFilename)
+void ListEntityKinds(Project project,std::string outputFilename)
 {
 	ofstream outputFile;
 	outputFile.open(outputFilename);
@@ -45,7 +45,7 @@ void ListEntityKinds(Project project, string outputFilename)
 	outputFile.close();
 }
 
-void ListReferenceKinds(Project project, string outputFilename)
+void ListReferenceKinds(Project project,std::string outputFilename)
 {
 	ofstream outputFile;
 	outputFile.open(outputFilename);
@@ -69,7 +69,7 @@ void ListReferenceKinds(Project project, string outputFilename)
 	outputFile.close();
 }
 
-void ListProjectMetrics(Project project, string outputFilename)
+void ListProjectMetrics(Project project,std::string outputFilename)
 {
 	ofstream outputFile;
 	outputFile.open(outputFilename);
@@ -80,7 +80,7 @@ void ListProjectMetrics(Project project, string outputFilename)
 	for (list<Metric*>::iterator it = projectMetrics.begin(); it != projectMetrics.end(); ++it)
 	{
 		Metric* pMetric = *it;
-		string valueType = pMetric->IsInteger() ? "Integer" : "Double";
+		std::string valueType = pMetric->IsInteger() ? "Integer" : "Double";
 
 		outputFile << "  <ProjectMetric name=\"" << pMetric->GetName() << 
 			                        "\" type=\"" << valueType << 
@@ -95,7 +95,7 @@ void ListProjectMetrics(Project project, string outputFilename)
 	outputFile.close();
 }
 
-void ListEntities(Project project, string outputFilename)
+void ListEntities(Project project,std::string outputFilename)
 {
 	ofstream outputFile;
 	outputFile.open(outputFilename);
@@ -173,9 +173,9 @@ int main(int argc, char *argv[]) {
 	}
 	else
 	{
-		string dbFilename = argv[1];
-		string options = argv[2];
-		string outputFilename = argv[4];
+		std::string dbFilename = argv[1];
+		std::string options = argv[2];
+		std::string outputFilename = argv[4];
 
 		Project project(dbFilename);
 		if (project.Open())

@@ -1,7 +1,7 @@
 #include "ReferenceKindsParser.h"
-#include "StringComparer.h"
+#include "stringComparer.h"
 
-ReferenceKindsParser::ReferenceKindsParser(string kind, UdbLanguage udbLanguage)
+ReferenceKindsParser::ReferenceKindsParser(std::string kind, UdbLanguage udbLanguage)
 {
 	switch (udbLanguage)
 	{
@@ -23,9 +23,9 @@ ReferenceKindsParser::~ReferenceKindsParser()
 {
 }
 
-void ReferenceKindsParser::ParseCppKinds(string kind)
+void ReferenceKindsParser::ParseCppKinds(std::string kind)
 {
-	StringComparer comparer(kind);
+	stringComparer comparer(kind);
 
 	if (comparer.ContainsText("C Addr Use")) {}
 	if (comparer.ContainsText("C Addr Useby")) {}
@@ -150,9 +150,9 @@ void ReferenceKindsParser::ParseCppKinds(string kind)
 	else {}
 }
 
-void ReferenceKindsParser::ParseCSharpKinds(string kind)
+void ReferenceKindsParser::ParseCSharpKinds(std::string kind)
 {
-	StringComparer comparer(kind);
+	stringComparer comparer(kind);
 
 	if (comparer.ContainsText("c# csharp Alias")) {}
 	if (comparer.ContainsText("c# csharp Aliasfor")) {}
@@ -209,9 +209,9 @@ void ReferenceKindsParser::ParseCSharpKinds(string kind)
 	else {}
 }
 
-void ReferenceKindsParser::ParseJavaKinds(string kind)
+void ReferenceKindsParser::ParseJavaKinds(std::string kind)
 {
-	StringComparer comparer(kind);
+	stringComparer comparer(kind);
 
 	if (comparer.ContainsText("Java Call")) {}
 	if (comparer.ContainsText("Java Callby")) {}

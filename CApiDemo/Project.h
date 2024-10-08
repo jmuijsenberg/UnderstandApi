@@ -4,8 +4,6 @@
 #include <list>
 #include "Language.h"
 
-using namespace std;
-
 class Entity;
 class References;
 class Metric;
@@ -13,20 +11,20 @@ class Metric;
 class Project
 {
 private:
-	string _filename;
+	std::string _filename;
 	bool _isOpen;
 public:
-	Project(string filename);
+	Project(std::string filename);
 	~Project();
 
 	bool Open();
 	void Close();
 
 	Language GetLanguage() const;
-	string GetName() const;
-	string GetBuild() const;
-	list<Entity*> GetFiles() const;
-	list<Entity*> GetEntities() const;
-	list<Metric*> GetMetrics() const;
+	std::string GetName() const;
+	std::string GetBuild() const;
+	std::list<Entity*> GetFiles() const;
+	std::list<Entity*> GetEntities() const;
+	std::list<Metric*> GetMetrics() const;
 };
 

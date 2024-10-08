@@ -46,17 +46,17 @@ int Entity::GetId() const
 	return _id;
 }
 
-string Entity::GetNamespace() const
+std::string Entity::GetNamespace() const
 {
 	return _namespace;
 }
 
-string Entity::GetName() const
+std::string Entity::GetName() const
 {
 	return _name;
 }
 
-string Entity::GetType() const
+std::string Entity::GetType() const
 {
 	return _type;
 }
@@ -76,22 +76,22 @@ Language Entity::GetLanguage() const
 	return _language;
 }
 
-list<Reference*> Entity::GetReferences() const
+std::list<Reference*> Entity::GetReferences() const
 {
 	return _references;
 }
 
-list<Metric*> Entity::GetMetrics() const
+std::list<Metric*> Entity::GetMetrics() const
 {
 	return _metrics;
 }
 
-string Entity::GetComment() const
+std::string Entity::GetComment() const
 {
 	return _comment;
 }
 
-string Entity::GetKindText() const
+std::string Entity::GetKindText() const
 {
 	return _kindText;
 }

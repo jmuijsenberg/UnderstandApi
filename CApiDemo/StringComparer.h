@@ -2,16 +2,14 @@
 
 #include <string>
 
-using namespace std;
-
-class StringComparer
+class stringComparer
 {
 private:
-	string _text;
+	std::string _text;
 public:
-	StringComparer(string text);
-	~StringComparer();
+	stringComparer(std::string text);
+	~stringComparer();
 
-	bool ContainsText(string substring) const;
+	bool ContainsText(std::string substring) const;
 };
 

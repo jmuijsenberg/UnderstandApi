@@ -28,12 +28,12 @@ int Reference::GetSourceEntityId() const
 	return _sourceEntityId;
 }
 
-string Reference::GetSourceEntityName() const
+std::string Reference::GetSourceEntityName() const
 {
 	return _sourceEntityName;
 }
 
-string Reference::GetSourceEntityKindName() const
+std::string Reference::GetSourceEntityKindName() const
 {
 	return _sourceEntityKindName;
 }
@@ -43,12 +43,12 @@ int Reference::GetTargetEntityId() const
 	return _targetEntityId;
 }
 
-string Reference::GetTargetEntityName() const
+std::string Reference::GetTargetEntityName() const
 {
 	return _targetEntityName;
 }
 
-string Reference::GetTargetEntityKindName() const
+std::string Reference::GetTargetEntityKindName() const
 {
 	return _targetEntityKindName;
 }
@@ -58,7 +58,7 @@ ReferenceKind Reference::GetKind() const
 	return _kind;
 }
 
-string Reference::GetFile() const
+std::string Reference::GetFile() const
 {
 	return _file;
 }
@@ -73,7 +73,7 @@ int Reference::GetColumn() const
 	return _column;
 }
 
-string Reference::GetKindText() const
+std::string Reference::GetKindText() const
 {
 	return _kindText;
 }

@@ -4,7 +4,7 @@
 #include "Util.h"
 #include <cassert>
 
-Project::Project(string filename)
+Project::Project(std::string filename)
 {
 	_filename = filename;
 	_isOpen = false;
@@ -54,25 +54,25 @@ Language Project::GetLanguage() const
 	return Util::GetLanguage(udbDbLanguage());
 }
 
-string Project::GetName() const
+std::string Project::GetName() const
 {
 	assert(_isOpen);
 
 	return udbDbName();
 }
 
-string Project::GetBuild() const
+std::string Project::GetBuild() const
 {
 	assert(_isOpen);
 
 	return udbInfoBuild();
 }
 
-list<Entity*> Project::GetFiles() const
+std::list<Entity*> Project::GetFiles() const
 {
 	assert(_isOpen);
 
-	list<Entity*> entities;
+	std::list<Entity*> entities;
 
 	UdbEntity *ents;
 	int entsSize;
@@ -88,11 +88,11 @@ list<Entity*> Project::GetFiles() const
 	return entities;
 }
 
-list<Entity*> Project::GetEntities() const
+std::list<Entity*> Project::GetEntities() const
 {
 	assert(_isOpen);
 
-	list<Entity*> entities;
+	std::list<Entity*> entities;
 
 	UdbEntity *ents;
 	int entsSize;
@@ -108,11 +108,11 @@ list<Entity*> Project::GetEntities() const
 	return entities;
 }
 
-list<Metric*> Project::GetMetrics() const
+std::list<Metric*> Project::GetMetrics() const
 {
 	assert(_isOpen);
 
-	list<Metric*> projectMetrics;
+	std::list<Metric*> projectMetrics;
 
 	UdbMetric *metrics;
 	int size = udbMetricListProject(udbDbLanguage(), &metrics);

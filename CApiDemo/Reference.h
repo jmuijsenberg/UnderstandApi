@@ -7,36 +7,34 @@
 #include "Entity.h"
 #include "ReferenceKind.h"
 
-using namespace std;
-
 class Reference
 {
 private:
 	int _sourceEntityId;
-	string _sourceEntityName;
-	string _sourceEntityKindName;
+	std::string _sourceEntityName;
+	std::string _sourceEntityKindName;
 	int _targetEntityId;
-	string _targetEntityName;
-	string _targetEntityKindName;
+	std::string _targetEntityName;
+	std::string _targetEntityKindName;
 	ReferenceKind _kind;
-	string _file;
+	std::string _file;
 	int _line;
 	int _column;
-	string _kindText;
+	std::string _kindText;
 public:
 	Reference(UdbEntity sourceEntity, UdbReference udbReference, UdbLanguage udbLanguage);
 	~Reference();
 
 	int GetSourceEntityId() const;
-	string GetSourceEntityName() const;
-	string GetSourceEntityKindName() const;
+	std::string GetSourceEntityName() const;
+	std::string GetSourceEntityKindName() const;
 	int GetTargetEntityId() const;
-	string GetTargetEntityName() const;
-	string GetTargetEntityKindName() const;
+	std::string GetTargetEntityName() const;
+	std::string GetTargetEntityKindName() const;
 	ReferenceKind GetKind() const;
-	string GetFile() const;
+	std::string GetFile() const;
 	int GetLine() const;
 	int GetColumn() const;
-	string GetKindText() const;
+	std::string GetKindText() const;
 };
 

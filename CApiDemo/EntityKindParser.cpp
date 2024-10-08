@@ -1,7 +1,7 @@
 #include "EntityKindParser.h"
-#include "StringComparer.h"
+#include "stringComparer.h"
 
-EntityKindParser::EntityKindParser(string kind, UdbLanguage udbLanguage)
+EntityKindParser::EntityKindParser(std::string kind, UdbLanguage udbLanguage)
 {
 	switch (udbLanguage)
 	{
@@ -23,9 +23,9 @@ EntityKindParser::~EntityKindParser()
 {
 }
 
-void EntityKindParser::ParseCppKinds(string kind)
+void EntityKindParser::ParseCppKinds(std::string kind)
 {
-	StringComparer comparer(kind);
+	stringComparer comparer(kind);
 
 
 	if (comparer.ContainsText("C Abstract Class Type")) {}
@@ -390,9 +390,9 @@ void EntityKindParser::ParseCppKinds(string kind)
 	else {}
 }
 
-void EntityKindParser::ParseCSharpKinds(string kind)
+void EntityKindParser::ParseCSharpKinds(std::string kind)
 {
-	StringComparer comparer(kind);
+	stringComparer comparer(kind);
 
 	if (comparer.ContainsText("c# csharp Namespace Alias")) {}
 	if (comparer.ContainsText("c# csharp Type Alias")) {}
@@ -702,9 +702,9 @@ void EntityKindParser::ParseCSharpKinds(string kind)
 	else {}
 }
 
-void EntityKindParser::ParseJavaKinds(string kind)
+void EntityKindParser::ParseJavaKinds(std::string kind)
 {
-	StringComparer comparer(kind);
+	stringComparer comparer(kind);
 
 	if (comparer.ContainsText("Java Abstract Class Type Default Member")) {}
 	if (comparer.ContainsText("Java Abstract Class Type Private Member")) {}

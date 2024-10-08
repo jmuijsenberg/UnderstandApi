@@ -9,8 +9,6 @@
 #include "EntityKind.h"
 #include "Language.h"
 
-using namespace std;
-
 class Reference;
 class Metric;
 
@@ -18,29 +16,29 @@ class Entity
 {
 private:
 	int _id;
-	string _namespace;
-	string _name;
-	string _type;
+	std::string _namespace;
+	std::string _name;
+	std::string _type;
 	Scope _scope;
 	EntityKind _kind;
 	Language _language;
-	list<Reference*> _references;
-	list<Metric*> _metrics;
-	string _comment;
-	string _kindText;
+	std::list<Reference*> _references;
+	std::list<Metric*> _metrics;
+	std::string _comment;
+	std::string _kindText;
 public:
 	Entity(UdbEntity udbEntity, UdbLanguage udbLanguage);
 	~Entity();
 
 	int GetId() const;
-	string GetNamespace() const;
-	string GetName() const;
-	string GetType() const;
+	std::string GetNamespace() const;
+	std::string GetName() const;
+	std::string GetType() const;
 	Scope GetScope() const;
 	EntityKind GetKind() const;
 	Language GetLanguage() const;
-	list<Reference*> GetReferences() const;
-	list<Metric*> GetMetrics() const;
-	string GetComment() const;
-	string GetKindText() const;
+	std::list<Reference*> GetReferences() const;
+	std::list<Metric*> GetMetrics() const;
+	std::string GetComment() const;
+	std::string GetKindText() const;
 };
