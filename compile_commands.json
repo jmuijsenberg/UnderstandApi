@@ -1,0 +1,55 @@
+﻿[
+  {
+    "directory": "C:/Github/UnderstandApi/",
+    "command": "\"C:/Users/jmuijsenberg/AppData/Roaming/ClangPowerTools/LLVM_Lite/Bin/clang++.exe\" -x c++ \"C:/Github/UnderstandApi/CApiDemo/Project.cpp\" -std=c++14 -Wall -fms-compatibility-version=19.10 -Wmicrosoft -Wno-invalid-token-paste -Wno-unknown-pragmas -Wno-unused-value -m32 -fsyntax-only \"-D_MT\" \"-D_DLL\" \"-D_DEBUG_FUNCTIONAL_MACHINERY\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/atlmfc/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/VS/include\" -isystem\"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/um\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/shared\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/winrt\"",
+    "file": "C:/Github/UnderstandApi/CApiDemo/Project.cpp"
+  }
+  ,
+  {
+    "directory": "C:/Github/UnderstandApi/",
+    "command": "\"C:/Users/jmuijsenberg/AppData/Roaming/ClangPowerTools/LLVM_Lite/Bin/clang++.exe\" -x c++ \"C:/Github/UnderstandApi/CApiDemo/ReferenceKindsParser.cpp\" -std=c++14 -Wall -fms-compatibility-version=19.10 -Wmicrosoft -Wno-invalid-token-paste -Wno-unknown-pragmas -Wno-unused-value -m32 -fsyntax-only \"-D_MT\" \"-D_DLL\" \"-D_DEBUG_FUNCTIONAL_MACHINERY\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/atlmfc/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/VS/include\" -isystem\"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/um\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/shared\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/winrt\"",
+    "file": "C:/Github/UnderstandApi/CApiDemo/ReferenceKindsParser.cpp"
+  }
+  ,
+  {
+    "directory": "C:/Github/UnderstandApi/",
+    "command": "\"C:/Users/jmuijsenberg/AppData/Roaming/ClangPowerTools/LLVM_Lite/Bin/clang++.exe\" -x c++ \"C:/Github/UnderstandApi/CApiDemo/Entity.cpp\" -std=c++14 -Wall -fms-compatibility-version=19.10 -Wmicrosoft -Wno-invalid-token-paste -Wno-unknown-pragmas -Wno-unused-value -m32 -fsyntax-only \"-D_MT\" \"-D_DLL\" \"-D_DEBUG_FUNCTIONAL_MACHINERY\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/atlmfc/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/VS/include\" -isystem\"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/um\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/shared\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/winrt\"",
+    "file": "C:/Github/UnderstandApi/CApiDemo/Entity.cpp"
+  }
+  ,
+  {
+    "directory": "C:/Github/UnderstandApi/",
+    "command": "\"C:/Users/jmuijsenberg/AppData/Roaming/ClangPowerTools/LLVM_Lite/Bin/clang++.exe\" -x c++ \"C:/Github/UnderstandApi/CApiDemo/Main.cpp\" -std=c++14 -Wall -fms-compatibility-version=19.10 -Wmicrosoft -Wno-invalid-token-paste -Wno-unknown-pragmas -Wno-unused-value -m32 -fsyntax-only \"-D_MT\" \"-D_DLL\" \"-D_DEBUG_FUNCTIONAL_MACHINERY\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/atlmfc/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/VS/include\" -isystem\"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/um\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/shared\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/winrt\"",
+    "file": "C:/Github/UnderstandApi/CApiDemo/Main.cpp"
+  }
+  ,
+  {
+    "directory": "C:/Github/UnderstandApi/",
+    "command": "\"C:/Users/jmuijsenberg/AppData/Roaming/ClangPowerTools/LLVM_Lite/Bin/clang++.exe\" -x c++ \"C:/Github/UnderstandApi/CApiDemo/StringComparer.cpp\" -std=c++14 -Wall -fms-compatibility-version=19.10 -Wmicrosoft -Wno-invalid-token-paste -Wno-unknown-pragmas -Wno-unused-value -m32 -fsyntax-only \"-D_MT\" \"-D_DLL\" \"-D_DEBUG_FUNCTIONAL_MACHINERY\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/atlmfc/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/VS/include\" -isystem\"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/um\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/shared\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/winrt\"",
+    "file": "C:/Github/UnderstandApi/CApiDemo/StringComparer.cpp"
+  }
+  ,
+  {
+    "directory": "C:/Github/UnderstandApi/",
+    "command": "\"C:/Users/jmuijsenberg/AppData/Roaming/ClangPowerTools/LLVM_Lite/Bin/clang++.exe\" -x c++ \"C:/Github/UnderstandApi/CApiDemo/Reference.cpp\" -std=c++14 -Wall -fms-compatibility-version=19.10 -Wmicrosoft -Wno-invalid-token-paste -Wno-unknown-pragmas -Wno-unused-value -m32 -fsyntax-only \"-D_MT\" \"-D_DLL\" \"-D_DEBUG_FUNCTIONAL_MACHINERY\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/atlmfc/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/VS/include\" -isystem\"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/um\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/shared\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/winrt\"",
+    "file": "C:/Github/UnderstandApi/CApiDemo/Reference.cpp"
+  }
+  ,
+  {
+    "directory": "C:/Github/UnderstandApi/",
+    "command": "\"C:/Users/jmuijsenberg/AppData/Roaming/ClangPowerTools/LLVM_Lite/Bin/clang++.exe\" -x c++ \"C:/Github/UnderstandApi/CApiDemo/EntityKindParser.cpp\" -std=c++14 -Wall -fms-compatibility-version=19.10 -Wmicrosoft -Wno-invalid-token-paste -Wno-unknown-pragmas -Wno-unused-value -m32 -fsyntax-only \"-D_MT\" \"-D_DLL\" \"-D_DEBUG_FUNCTIONAL_MACHINERY\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/atlmfc/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/VS/include\" -isystem\"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/um\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/shared\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/winrt\"",
+    "file": "C:/Github/UnderstandApi/CApiDemo/EntityKindParser.cpp"
+  }
+  ,
+  {
+    "directory": "C:/Github/UnderstandApi/",
+    "command": "\"C:/Users/jmuijsenberg/AppData/Roaming/ClangPowerTools/LLVM_Lite/Bin/clang++.exe\" -x c++ \"C:/Github/UnderstandApi/CApiDemo/Metric.cpp\" -std=c++14 -Wall -fms-compatibility-version=19.10 -Wmicrosoft -Wno-invalid-token-paste -Wno-unknown-pragmas -Wno-unused-value -m32 -fsyntax-only \"-D_MT\" \"-D_DLL\" \"-D_DEBUG_FUNCTIONAL_MACHINERY\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/atlmfc/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/VS/include\" -isystem\"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/um\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/shared\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/winrt\"",
+    "file": "C:/Github/UnderstandApi/CApiDemo/Metric.cpp"
+  }
+  ,
+  {
+    "directory": "C:/Github/UnderstandApi/",
+    "command": "\"C:/Users/jmuijsenberg/AppData/Roaming/ClangPowerTools/LLVM_Lite/Bin/clang++.exe\" -x c++ \"C:/Github/UnderstandApi/CApiDemo/Util.cpp\" -std=c++14 -Wall -fms-compatibility-version=19.10 -Wmicrosoft -Wno-invalid-token-paste -Wno-unknown-pragmas -Wno-unused-value -m32 -fsyntax-only \"-D_MT\" \"-D_DLL\" \"-D_DEBUG_FUNCTIONAL_MACHINERY\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/atlmfc/include\" -isystem\"C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Auxiliary/VS/include\" -isystem\"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/um\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/shared\" -isystem\"C:/Program Files (x86)/Windows Kits/8.1/Include/winrt\"",
+    "file": "C:/Github/UnderstandApi/CApiDemo/Util.cpp"
+  }
+]
