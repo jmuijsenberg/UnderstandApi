@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_project" kind="class" language="C++" prot="public">
+    <compoundname>Project</compoundname>
+    <includes refid="_project_8h" local="no">Project.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_project_1a6f714b6266a3738186112e6d5fc55a62" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Project::_filename</definition>
+        <argsstring></argsstring>
+        <name>_filename</name>
+        <qualifiedname>Project::_filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="14" column="13" bodyfile="CApiDemo/Project.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_project_1a45bfe3647ba3320b3f67f4706e68aef5" compoundref="_project_8cpp" startline="17" endline="39">Open</referencedby>
+        <referencedby refid="class_project_1ae1d8f38a932f79a57f033821ca5501e4" compoundref="_project_8cpp" startline="7" endline="11">Project</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_project_1a66d52da1345d7bc580990231635ad97b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Project::_isOpen</definition>
+        <argsstring></argsstring>
+        <name>_isOpen</name>
+        <qualifiedname>Project::_isOpen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="15" column="6" bodyfile="CApiDemo/Project.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_project_1abfef9969a7e24452b20ebfe2d025df1e" compoundref="_project_8cpp" startline="41" endline="48">Close</referencedby>
+        <referencedby refid="class_project_1a975c1eb3efcb5b59629a03e3b10c6ace" compoundref="_project_8cpp" startline="64" endline="69">GetBuild</referencedby>
+        <referencedby refid="class_project_1a837519b412aeeea82234a59a200461a7" compoundref="_project_8cpp" startline="91" endline="109">GetEntities</referencedby>
+        <referencedby refid="class_project_1a68ec872048f95bff6437e48ec2893688" compoundref="_project_8cpp" startline="71" endline="89">GetFiles</referencedby>
+        <referencedby refid="class_project_1ac30a9db51b66b06d4145429f5017ab4f" compoundref="_project_8cpp" startline="50" endline="55">GetLanguage</referencedby>
+        <referencedby refid="class_project_1abc4ff55f5f6df2b5b275cce090ff7737" compoundref="_project_8cpp" startline="111" endline="128">GetMetrics</referencedby>
+        <referencedby refid="class_project_1a9394b14b4010aab868ff74a2b297d335" compoundref="_project_8cpp" startline="57" endline="62">GetName</referencedby>
+        <referencedby refid="class_project_1a45bfe3647ba3320b3f67f4706e68aef5" compoundref="_project_8cpp" startline="17" endline="39">Open</referencedby>
+        <referencedby refid="class_project_1ae1d8f38a932f79a57f033821ca5501e4" compoundref="_project_8cpp" startline="7" endline="11">Project</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_project_1ae1d8f38a932f79a57f033821ca5501e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Project::Project</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>Project</name>
+        <qualifiedname>Project::Project</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="17" column="1" bodyfile="CApiDemo/Project.cpp" bodystart="7" bodyend="11"/>
+        <references refid="class_project_1a6f714b6266a3738186112e6d5fc55a62" compoundref="_project_8h" startline="14">_filename</references>
+        <references refid="class_project_1a66d52da1345d7bc580990231635ad97b" compoundref="_project_8h" startline="15">_isOpen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_project_1ad165d61b76ee86ee9c27fd987a2a7b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Project::~Project</definition>
+        <argsstring>()</argsstring>
+        <name>~Project</name>
+        <qualifiedname>Project::~Project</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="18" column="1" bodyfile="CApiDemo/Project.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_project_1a45bfe3647ba3320b3f67f4706e68aef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Project::Open</definition>
+        <argsstring>()</argsstring>
+        <name>Open</name>
+        <qualifiedname>Project::Open</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="20" column="6" bodyfile="CApiDemo/Project.cpp" bodystart="17" bodyend="39"/>
+        <references refid="class_project_1a6f714b6266a3738186112e6d5fc55a62" compoundref="_project_8h" startline="14">_filename</references>
+        <references refid="class_project_1a66d52da1345d7bc580990231635ad97b" compoundref="_project_8h" startline="15">_isOpen</references>
+        <referencedby refid="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="_main_8cpp" startline="160" endline="207">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_project_1abfef9969a7e24452b20ebfe2d025df1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Project::Close</definition>
+        <argsstring>()</argsstring>
+        <name>Close</name>
+        <qualifiedname>Project::Close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="21" column="6" bodyfile="CApiDemo/Project.cpp" bodystart="41" bodyend="48"/>
+        <references refid="class_project_1a66d52da1345d7bc580990231635ad97b" compoundref="_project_8h" startline="15">_isOpen</references>
+        <referencedby refid="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="_main_8cpp" startline="160" endline="207">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_project_1ac30a9db51b66b06d4145429f5017ab4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_language_8h_1a315ca917ad583797f709ea477dd28705" kindref="member">Language</ref></type>
+        <definition>Language Project::GetLanguage</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLanguage</name>
+        <qualifiedname>Project::GetLanguage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="23" column="10" bodyfile="CApiDemo/Project.cpp" bodystart="50" bodyend="55"/>
+        <references refid="class_project_1a66d52da1345d7bc580990231635ad97b" compoundref="_project_8h" startline="15">_isOpen</references>
+        <references refid="class_util_1a58d7917635be401cbf98131bbe5019ed" compoundref="_util_8cpp" startline="4" endline="31">Util::GetLanguage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_project_1a9394b14b4010aab868ff74a2b297d335" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Project::GetName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetName</name>
+        <qualifiedname>Project::GetName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="24" column="13" bodyfile="CApiDemo/Project.cpp" bodystart="57" bodyend="62"/>
+        <references refid="class_project_1a66d52da1345d7bc580990231635ad97b" compoundref="_project_8h" startline="15">_isOpen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_project_1a975c1eb3efcb5b59629a03e3b10c6ace" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Project::GetBuild</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBuild</name>
+        <qualifiedname>Project::GetBuild</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="25" column="13" bodyfile="CApiDemo/Project.cpp" bodystart="64" bodyend="69"/>
+        <references refid="class_project_1a66d52da1345d7bc580990231635ad97b" compoundref="_project_8h" startline="15">_isOpen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_project_1a68ec872048f95bff6437e48ec2893688" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_entity" kindref="compound">Entity</ref> * &gt;</type>
+        <definition>std::list&lt; Entity * &gt; Project::GetFiles</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFiles</name>
+        <qualifiedname>Project::GetFiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="26" column="11" bodyfile="CApiDemo/Project.cpp" bodystart="71" bodyend="89"/>
+        <references refid="class_project_1a66d52da1345d7bc580990231635ad97b" compoundref="_project_8h" startline="15">_isOpen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_project_1a837519b412aeeea82234a59a200461a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_entity" kindref="compound">Entity</ref> * &gt;</type>
+        <definition>std::list&lt; Entity * &gt; Project::GetEntities</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEntities</name>
+        <qualifiedname>Project::GetEntities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="27" column="11" bodyfile="CApiDemo/Project.cpp" bodystart="91" bodyend="109"/>
+        <references refid="class_project_1a66d52da1345d7bc580990231635ad97b" compoundref="_project_8h" startline="15">_isOpen</references>
+        <referencedby refid="_main_8cpp_1a252fe2ebc7e65a3444aeddf4af80dc49" compoundref="_main_8cpp" startline="98" endline="158">ListEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_project_1abc4ff55f5f6df2b5b275cce090ff7737" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_metric" kindref="compound">Metric</ref> * &gt;</type>
+        <definition>std::list&lt; Metric * &gt; Project::GetMetrics</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMetrics</name>
+        <qualifiedname>Project::GetMetrics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Project.h" line="28" column="11" bodyfile="CApiDemo/Project.cpp" bodystart="111" bodyend="128"/>
+        <references refid="class_project_1a66d52da1345d7bc580990231635ad97b" compoundref="_project_8h" startline="15">_isOpen</references>
+        <referencedby refid="_main_8cpp_1a33ee46920e96b4e84c935327986a4968" compoundref="_main_8cpp" startline="72" endline="96">ListProjectMetrics</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Project</label>
+        <link refid="class_project"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_filename</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_isOpen</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>bool</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="CApiDemo/Project.h" line="11" column="1" bodyfile="CApiDemo/Project.h" bodystart="12" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_project_1a6f714b6266a3738186112e6d5fc55a62" prot="private" virt="non-virtual"><scope>Project</scope><name>_filename</name></member>
+      <member refid="class_project_1a66d52da1345d7bc580990231635ad97b" prot="private" virt="non-virtual"><scope>Project</scope><name>_isOpen</name></member>
+      <member refid="class_project_1abfef9969a7e24452b20ebfe2d025df1e" prot="public" virt="non-virtual"><scope>Project</scope><name>Close</name></member>
+      <member refid="class_project_1a975c1eb3efcb5b59629a03e3b10c6ace" prot="public" virt="non-virtual"><scope>Project</scope><name>GetBuild</name></member>
+      <member refid="class_project_1a837519b412aeeea82234a59a200461a7" prot="public" virt="non-virtual"><scope>Project</scope><name>GetEntities</name></member>
+      <member refid="class_project_1a68ec872048f95bff6437e48ec2893688" prot="public" virt="non-virtual"><scope>Project</scope><name>GetFiles</name></member>
+      <member refid="class_project_1ac30a9db51b66b06d4145429f5017ab4f" prot="public" virt="non-virtual"><scope>Project</scope><name>GetLanguage</name></member>
+      <member refid="class_project_1abc4ff55f5f6df2b5b275cce090ff7737" prot="public" virt="non-virtual"><scope>Project</scope><name>GetMetrics</name></member>
+      <member refid="class_project_1a9394b14b4010aab868ff74a2b297d335" prot="public" virt="non-virtual"><scope>Project</scope><name>GetName</name></member>
+      <member refid="class_project_1a45bfe3647ba3320b3f67f4706e68aef5" prot="public" virt="non-virtual"><scope>Project</scope><name>Open</name></member>
+      <member refid="class_project_1ae1d8f38a932f79a57f033821ca5501e4" prot="public" virt="non-virtual"><scope>Project</scope><name>Project</name></member>
+      <member refid="class_project_1ad165d61b76ee86ee9c27fd987a2a7b9e" prot="public" virt="non-virtual"><scope>Project</scope><name>~Project</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

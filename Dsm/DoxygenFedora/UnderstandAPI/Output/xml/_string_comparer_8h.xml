@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_string_comparer_8h" kind="file" language="C++">
+    <compoundname>StringComparer.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="_entity_kind_parser_8cpp" local="yes">CApiDemo/EntityKindParser.cpp</includedby>
+    <includedby refid="_reference_kinds_parser_8cpp" local="yes">CApiDemo/ReferenceKindsParser.cpp</includedby>
+    <includedby refid="_string_comparer_8cpp" local="yes">CApiDemo/StringComparer.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>CApiDemo/StringComparer.h</label>
+        <link refid="_string_comparer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>CApiDemo/EntityKindParser.cpp</label>
+        <link refid="_entity_kind_parser_8cpp"/>
+      </node>
+      <node id="3">
+        <label>CApiDemo/ReferenceKindsParser.cpp</label>
+        <link refid="_reference_kinds_parser_8cpp"/>
+      </node>
+      <node id="4">
+        <label>CApiDemo/StringComparer.cpp</label>
+        <link refid="_string_comparer_8cpp"/>
+      </node>
+      <node id="1">
+        <label>CApiDemo/StringComparer.h</label>
+        <link refid="_string_comparer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classstring_comparer" prot="public">stringComparer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CApiDemo/StringComparer.h"/>
+  </compounddef>
+</doxygen>

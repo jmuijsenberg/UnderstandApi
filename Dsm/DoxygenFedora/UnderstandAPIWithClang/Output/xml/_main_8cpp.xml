@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_main_8cpp" kind="file" language="C++">
+    <compoundname>Main.cpp</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="yes">udb.h</includes>
+    <includes refid="_project_8h" local="yes">Project.h</includes>
+    <includes refid="_entity_8h" local="yes">Entity.h</includes>
+    <includes refid="_reference_8h" local="yes">Reference.h</includes>
+    <includes refid="_metric_8h" local="yes">Metric.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>EntityKind.h</label>
+        <link refid="_entity_kind_8h"/>
+      </node>
+      <node id="8">
+        <label>Language.h</label>
+        <link refid="_language_8h"/>
+      </node>
+      <node id="1">
+        <label>CApiDemo/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Metric.h</label>
+        <link refid="_metric_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Project.h</label>
+        <link refid="_project_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Reference.h</label>
+        <link refid="_reference_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ReferenceKind.h</label>
+        <link refid="_reference_kind_8h"/>
+      </node>
+      <node id="10">
+        <label>Scope.h</label>
+        <link refid="_scope_8h"/>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>list</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>udb.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_main_8cpp_1ab7f73666957a779cb72f2c89f92bcde7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShowError</definition>
+        <argsstring>(std::string error)</argsstring>
+        <name>ShowError</name>
+        <param>
+          <type>std::string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Main.cpp" line="13" column="6" bodyfile="CApiDemo/Main.cpp" bodystart="13" bodyend="22"/>
+        <referencedby refid="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="_main_8cpp" startline="160" endline="207">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a86cca8e8042d220ccb027c5b4697d9fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListEntityKinds</definition>
+        <argsstring>(Project project, std::string outputFilename)</argsstring>
+        <name>ListEntityKinds</name>
+        <param>
+          <type><ref refid="class_project" kindref="compound">Project</ref></type>
+          <declname>project</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>outputFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Main.cpp" line="24" column="6" bodyfile="CApiDemo/Main.cpp" bodystart="24" bodyend="46"/>
+        <referencedby refid="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="_main_8cpp" startline="160" endline="207">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a87e5799687d565e75931340f07586244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListReferenceKinds</definition>
+        <argsstring>(Project project, std::string outputFilename)</argsstring>
+        <name>ListReferenceKinds</name>
+        <param>
+          <type><ref refid="class_project" kindref="compound">Project</ref></type>
+          <declname>project</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>outputFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Main.cpp" line="48" column="6" bodyfile="CApiDemo/Main.cpp" bodystart="48" bodyend="70"/>
+        <referencedby refid="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="_main_8cpp" startline="160" endline="207">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a33ee46920e96b4e84c935327986a4968" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListProjectMetrics</definition>
+        <argsstring>(Project project, std::string outputFilename)</argsstring>
+        <name>ListProjectMetrics</name>
+        <param>
+          <type><ref refid="class_project" kindref="compound">Project</ref></type>
+          <declname>project</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>outputFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Main.cpp" line="72" column="6" bodyfile="CApiDemo/Main.cpp" bodystart="72" bodyend="96"/>
+        <references refid="class_project_1abc4ff55f5f6df2b5b275cce090ff7737" compoundref="_project_8cpp" startline="111" endline="128">Project::GetMetrics</references>
+        <references refid="class_metric_1a1f283882b26175eead46b39fc2ecd477" compoundref="_metric_8cpp" startline="15" endline="18">Metric::GetName</references>
+        <references refid="class_metric_1ad4578abfdd951d7f6d3f181c8544ac97" compoundref="_metric_8cpp" startline="30" endline="33">Metric::GetValue</references>
+        <references refid="class_metric_1ae511f867ce5e6b7e119054d564bbc287" compoundref="_metric_8cpp" startline="25" endline="28">Metric::IsInteger</references>
+        <referencedby refid="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="_main_8cpp" startline="160" endline="207">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a252fe2ebc7e65a3444aeddf4af80dc49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListEntities</definition>
+        <argsstring>(Project project, std::string outputFilename)</argsstring>
+        <name>ListEntities</name>
+        <param>
+          <type><ref refid="class_project" kindref="compound">Project</ref></type>
+          <declname>project</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>outputFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Main.cpp" line="98" column="6" bodyfile="CApiDemo/Main.cpp" bodystart="98" bodyend="158"/>
+        <references refid="class_project_1a837519b412aeeea82234a59a200461a7" compoundref="_project_8cpp" startline="91" endline="109">Project::GetEntities</references>
+        <references refid="class_entity_1a478be4b3bc1cc77e5fd92a7dda6689a4" compoundref="_entity_8cpp" startline="45" endline="48">Entity::GetId</references>
+        <references refid="class_entity_1a2728b15d48d4fcf58973e19ffe4b1004" compoundref="_entity_8cpp" startline="95" endline="98">Entity::GetKindText</references>
+        <references refid="class_reference_1a654c8a9feb45291ab21ae584f04085a4" compoundref="_reference_8cpp" startline="76" endline="79">Reference::GetKindText</references>
+        <references refid="class_entity_1a1d72f5003f9eed6edb81c17ff4f888cd" compoundref="_entity_8cpp" startline="55" endline="58">Entity::GetName</references>
+        <references refid="class_entity_1abda054125e3d1652978a15b56a9e8e8d" compoundref="_entity_8cpp" startline="80" endline="83">Entity::GetReferences</references>
+        <references refid="class_reference_1a503d036b6570805a393cb7c7ca58bfc3" compoundref="_reference_8cpp" startline="41" endline="44">Reference::GetTargetEntityId</references>
+        <references refid="class_reference_1a951f055596aa411445eaf810b274a279" compoundref="_reference_8cpp" startline="51" endline="54">Reference::GetTargetEntityKindName</references>
+        <references refid="class_reference_1a699e996a241c9deec3843d8555668608" compoundref="_reference_8cpp" startline="46" endline="49">Reference::GetTargetEntityName</references>
+        <references refid="class_entity_1a906ca5c844298c0258bda83563f925a0" compoundref="_entity_8cpp" startline="60" endline="63">Entity::GetType</references>
+        <referencedby refid="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="_main_8cpp" startline="160" endline="207">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Main.cpp" line="160" column="5" bodyfile="CApiDemo/Main.cpp" bodystart="160" bodyend="207"/>
+        <references refid="class_project_1abfef9969a7e24452b20ebfe2d025df1e" compoundref="_project_8cpp" startline="41" endline="48">Project::Close</references>
+        <references refid="_main_8cpp_1a252fe2ebc7e65a3444aeddf4af80dc49" compoundref="_main_8cpp" startline="98" endline="158">ListEntities</references>
+        <references refid="_main_8cpp_1a86cca8e8042d220ccb027c5b4697d9fb" compoundref="_main_8cpp" startline="24" endline="46">ListEntityKinds</references>
+        <references refid="_main_8cpp_1a33ee46920e96b4e84c935327986a4968" compoundref="_main_8cpp" startline="72" endline="96">ListProjectMetrics</references>
+        <references refid="_main_8cpp_1a87e5799687d565e75931340f07586244" compoundref="_main_8cpp" startline="48" endline="70">ListReferenceKinds</references>
+        <references refid="class_project_1a45bfe3647ba3320b3f67f4706e68aef5" compoundref="_project_8cpp" startline="17" endline="39">Project::Open</references>
+        <references refid="_main_8cpp_1ab7f73666957a779cb72f2c89f92bcde7" compoundref="_main_8cpp" startline="13" endline="22">ShowError</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CApiDemo/Main.cpp"/>
+  </compounddef>
+</doxygen>

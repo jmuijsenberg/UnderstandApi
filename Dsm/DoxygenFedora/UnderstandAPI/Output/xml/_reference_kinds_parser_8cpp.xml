@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_reference_kinds_parser_8cpp" kind="file" language="C++">
+    <compoundname>ReferenceKindsParser.cpp</compoundname>
+    <includes refid="_reference_kinds_parser_8h" local="yes">ReferenceKindsParser.h</includes>
+    <includes refid="_string_comparer_8h" local="yes">stringComparer.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>ReferenceKind.h</label>
+        <link refid="_reference_kind_8h"/>
+      </node>
+      <node id="1">
+        <label>CApiDemo/ReferenceKindsParser.cpp</label>
+        <link refid="_reference_kinds_parser_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ReferenceKindsParser.h</label>
+        <link refid="_reference_kinds_parser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stringComparer.h</label>
+        <link refid="_string_comparer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>udb.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CApiDemo/ReferenceKindsParser.cpp"/>
+  </compounddef>
+</doxygen>

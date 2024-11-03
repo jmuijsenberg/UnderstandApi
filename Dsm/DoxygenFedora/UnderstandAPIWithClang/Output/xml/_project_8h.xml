@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_project_8h" kind="file" language="C++">
+    <compoundname>Project.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">list</includes>
+    <includes refid="_language_8h" local="yes">Language.h</includes>
+    <includedby refid="_main_8cpp" local="yes">CApiDemo/Main.cpp</includedby>
+    <includedby refid="_project_8cpp" local="yes">CApiDemo/Project.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Language.h</label>
+        <link refid="_language_8h"/>
+      </node>
+      <node id="1">
+        <label>CApiDemo/Project.h</label>
+        <link refid="_project_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>list</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>CApiDemo/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="3">
+        <label>CApiDemo/Project.cpp</label>
+        <link refid="_project_8cpp"/>
+      </node>
+      <node id="1">
+        <label>CApiDemo/Project.h</label>
+        <link refid="_project_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_project" prot="public">Project</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CApiDemo/Project.h"/>
+  </compounddef>
+</doxygen>

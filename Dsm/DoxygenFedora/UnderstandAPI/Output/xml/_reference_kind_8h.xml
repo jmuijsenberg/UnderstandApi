@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_reference_kind_8h" kind="file" language="C++">
+    <compoundname>ReferenceKind.h</compoundname>
+    <includedby refid="_reference_8h" local="yes">CApiDemo/Reference.h</includedby>
+    <includedby refid="_reference_kinds_parser_8h" local="yes">CApiDemo/ReferenceKindsParser.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>CApiDemo/Entity.cpp</label>
+        <link refid="_entity_8cpp"/>
+      </node>
+      <node id="4">
+        <label>CApiDemo/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>CApiDemo/Reference.cpp</label>
+        <link refid="_reference_8cpp"/>
+      </node>
+      <node id="2">
+        <label>CApiDemo/Reference.h</label>
+        <link refid="_reference_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CApiDemo/ReferenceKind.h</label>
+        <link refid="_reference_kind_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>CApiDemo/ReferenceKindsParser.cpp</label>
+        <link refid="_reference_kinds_parser_8cpp"/>
+      </node>
+      <node id="6">
+        <label>CApiDemo/ReferenceKindsParser.h</label>
+        <link refid="_reference_kinds_parser_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="_reference_kind_8h_1ab67ef02b75c3226cfe0b2791e2b48b06" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ReferenceKind</name>
+        <enumvalue id="_reference_kind_8h_1ab67ef02b75c3226cfe0b2791e2b48b06a62ed2bd5e0960e0482ea22c6e7e421de" prot="public">
+          <name>Include</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_reference_kind_8h_1ab67ef02b75c3226cfe0b2791e2b48b06a59b9abc46faffa225d20abc5e5252417" prot="public">
+          <name>Call</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_reference_kind_8h_1ab67ef02b75c3226cfe0b2791e2b48b06a9bf86f02d1361a1b06c3dbf0069b470e" prot="public">
+          <name>Use</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_reference_kind_8h_1ab67ef02b75c3226cfe0b2791e2b48b06ae8c0f315d6edc5d36e97a1b5b0bf45de" prot="public">
+          <name>BaseClass</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_reference_kind_8h_1ab67ef02b75c3226cfe0b2791e2b48b06a6529389ce1aab85b07ee6f0a6cce8720" prot="public">
+          <name>OtherReferenceKind</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/ReferenceKind.h" line="3" column="1" bodyfile="CApiDemo/ReferenceKind.h" bodystart="4" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CApiDemo/ReferenceKind.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_scope_8h" kind="file" language="C++">
+    <compoundname>Scope.h</compoundname>
+    <includedby refid="_entity_8h" local="yes">CApiDemo/Entity.h</includedby>
+    <includedby refid="_entity_kind_parser_8h" local="yes">CApiDemo/EntityKindParser.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>CApiDemo/Entity.cpp</label>
+        <link refid="_entity_8cpp"/>
+      </node>
+      <node id="2">
+        <label>CApiDemo/Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CApiDemo/EntityKindParser.cpp</label>
+        <link refid="_entity_kind_parser_8cpp"/>
+      </node>
+      <node id="8">
+        <label>CApiDemo/EntityKindParser.h</label>
+        <link refid="_entity_kind_parser_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CApiDemo/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>CApiDemo/Project.cpp</label>
+        <link refid="_project_8cpp"/>
+      </node>
+      <node id="7">
+        <label>CApiDemo/Reference.cpp</label>
+        <link refid="_reference_8cpp"/>
+      </node>
+      <node id="6">
+        <label>CApiDemo/Reference.h</label>
+        <link refid="_reference_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CApiDemo/Scope.h</label>
+        <link refid="_scope_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="_scope_8h_1aaecc53892786f2fa11e682f633af84c6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Scope</name>
+        <enumvalue id="_scope_8h_1aaecc53892786f2fa11e682f633af84c6a03ddcda8467f404189c984dc13409aa8" prot="public">
+          <name>Global</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scope_8h_1aaecc53892786f2fa11e682f633af84c6a2d47e20e63deb55d32228fde32f6b513" prot="public">
+          <name>Public</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scope_8h_1aaecc53892786f2fa11e682f633af84c6a72414112a6a45ab0b4b73e8b83d0b0f5" prot="public">
+          <name>Protected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scope_8h_1aaecc53892786f2fa11e682f633af84c6aaa82165706f5dd0859648a09f1f64166" prot="public">
+          <name>Private</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scope_8h_1aaecc53892786f2fa11e682f633af84c6aa992d66faf4c155dfd78ec168fc25f8a" prot="public">
+          <name>Internal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scope_8h_1aaecc53892786f2fa11e682f633af84c6a56310acf6f15f74f2d29751e3f9303a7" prot="public">
+          <name>OtherScope</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CApiDemo/Scope.h" line="3" column="1" bodyfile="CApiDemo/Scope.h" bodystart="4" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CApiDemo/Scope.h"/>
+  </compounddef>
+</doxygen>

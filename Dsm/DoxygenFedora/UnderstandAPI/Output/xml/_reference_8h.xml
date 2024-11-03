@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_reference_8h" kind="file" language="C++">
+    <compoundname>Reference.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="yes">udb.h</includes>
+    <includes refid="_entity_8h" local="yes">Entity.h</includes>
+    <includes refid="_reference_kind_8h" local="yes">ReferenceKind.h</includes>
+    <includedby refid="_entity_8cpp" local="yes">CApiDemo/Entity.cpp</includedby>
+    <includedby refid="_main_8cpp" local="yes">CApiDemo/Main.cpp</includedby>
+    <includedby refid="_reference_8cpp" local="yes">CApiDemo/Reference.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>EntityKind.h</label>
+        <link refid="_entity_kind_8h"/>
+      </node>
+      <node id="8">
+        <label>Language.h</label>
+        <link refid="_language_8h"/>
+      </node>
+      <node id="1">
+        <label>CApiDemo/Reference.h</label>
+        <link refid="_reference_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ReferenceKind.h</label>
+        <link refid="_reference_kind_8h"/>
+      </node>
+      <node id="6">
+        <label>Scope.h</label>
+        <link refid="_scope_8h"/>
+      </node>
+      <node id="5">
+        <label>list</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>udb.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>CApiDemo/Entity.cpp</label>
+        <link refid="_entity_8cpp"/>
+      </node>
+      <node id="3">
+        <label>CApiDemo/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="4">
+        <label>CApiDemo/Reference.cpp</label>
+        <link refid="_reference_8cpp"/>
+      </node>
+      <node id="1">
+        <label>CApiDemo/Reference.h</label>
+        <link refid="_reference_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_reference" prot="public">Reference</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CApiDemo/Reference.h"/>
+  </compounddef>
+</doxygen>

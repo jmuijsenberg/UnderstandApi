@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_e2d043cd93a260b2803aafe9394eef90" kind="dir">
+    <compoundname>CApiDemo</compoundname>
+    <innerfile refid="_entity_8cpp">Entity.cpp</innerfile>
+    <innerfile refid="_entity_8h">Entity.h</innerfile>
+    <innerfile refid="_entity_kind_8h">EntityKind.h</innerfile>
+    <innerfile refid="_entity_kind_parser_8cpp">EntityKindParser.cpp</innerfile>
+    <innerfile refid="_entity_kind_parser_8h">EntityKindParser.h</innerfile>
+    <innerfile refid="_language_8h">Language.h</innerfile>
+    <innerfile refid="_main_8cpp">Main.cpp</innerfile>
+    <innerfile refid="_metric_8cpp">Metric.cpp</innerfile>
+    <innerfile refid="_metric_8h">Metric.h</innerfile>
+    <innerfile refid="_project_8cpp">Project.cpp</innerfile>
+    <innerfile refid="_project_8h">Project.h</innerfile>
+    <innerfile refid="_reference_8cpp">Reference.cpp</innerfile>
+    <innerfile refid="_reference_8h">Reference.h</innerfile>
+    <innerfile refid="_reference_kind_8h">ReferenceKind.h</innerfile>
+    <innerfile refid="_reference_kinds_parser_8cpp">ReferenceKindsParser.cpp</innerfile>
+    <innerfile refid="_reference_kinds_parser_8h">ReferenceKindsParser.h</innerfile>
+    <innerfile refid="_scope_8h">Scope.h</innerfile>
+    <innerfile refid="_string_comparer_8cpp">StringComparer.cpp</innerfile>
+    <innerfile refid="_string_comparer_8h">StringComparer.h</innerfile>
+    <innerfile refid="_util_8cpp">Util.cpp</innerfile>
+    <innerfile refid="_util_8h">Util.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CApiDemo/"/>
+  </compounddef>
+</doxygen>
