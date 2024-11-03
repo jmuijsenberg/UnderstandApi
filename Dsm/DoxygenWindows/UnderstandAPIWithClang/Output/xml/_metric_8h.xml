@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_metric_8h" kind="file" language="C++">
+    <compoundname>Metric.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="yes">udb.h</includes>
+    <includedby refid="_entity_8cpp" local="yes">Entity.cpp</includedby>
+    <includedby refid="_main_8cpp" local="yes">Main.cpp</includedby>
+    <includedby refid="_metric_8cpp" local="yes">Metric.cpp</includedby>
+    <includedby refid="_project_8cpp" local="yes">Project.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Metric.h</label>
+        <link refid="_metric_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>udb.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Entity.cpp</label>
+        <link refid="_entity_8cpp"/>
+      </node>
+      <node id="3">
+        <label>Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="4">
+        <label>Metric.cpp</label>
+        <link refid="_metric_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Metric.h</label>
+        <link refid="_metric_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Project.cpp</label>
+        <link refid="_project_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_metric" prot="public">Metric</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Metric.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_main_8cpp" kind="file" language="C++">
+    <compoundname>Main.cpp</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="yes">udb.h</includes>
+    <includes refid="_project_8h" local="yes">Project.h</includes>
+    <includes refid="_entity_8h" local="yes">Entity.h</includes>
+    <includes refid="_reference_8h" local="yes">Reference.h</includes>
+    <includes refid="_metric_8h" local="yes">Metric.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>EntityKind.h</label>
+        <link refid="_entity_kind_8h"/>
+      </node>
+      <node id="8">
+        <label>Language.h</label>
+        <link refid="_language_8h"/>
+      </node>
+      <node id="1">
+        <label>Main.cpp</label>
+        <link refid="_main_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Metric.h</label>
+        <link refid="_metric_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Project.h</label>
+        <link refid="_project_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Reference.h</label>
+        <link refid="_reference_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ReferenceKind.h</label>
+        <link refid="_reference_kind_8h"/>
+      </node>
+      <node id="10">
+        <label>Scope.h</label>
+        <link refid="_scope_8h"/>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>list</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>udb.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_main_8cpp_1ab7f73666957a779cb72f2c89f92bcde7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShowError</definition>
+        <argsstring>(std::string error)</argsstring>
+        <name>ShowError</name>
+        <param>
+          <type>std::string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Main.cpp" line="13" column="6" bodyfile="Main.cpp" bodystart="13" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a86cca8e8042d220ccb027c5b4697d9fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListEntityKinds</definition>
+        <argsstring>(Project project, std::string outputFilename)</argsstring>
+        <name>ListEntityKinds</name>
+        <param>
+          <type><ref refid="class_project" kindref="compound">Project</ref></type>
+          <declname>project</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>outputFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Main.cpp" line="24" column="6" bodyfile="Main.cpp" bodystart="24" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a87e5799687d565e75931340f07586244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListReferenceKinds</definition>
+        <argsstring>(Project project, std::string outputFilename)</argsstring>
+        <name>ListReferenceKinds</name>
+        <param>
+          <type><ref refid="class_project" kindref="compound">Project</ref></type>
+          <declname>project</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>outputFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Main.cpp" line="48" column="6" bodyfile="Main.cpp" bodystart="48" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a33ee46920e96b4e84c935327986a4968" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListProjectMetrics</definition>
+        <argsstring>(Project project, std::string outputFilename)</argsstring>
+        <name>ListProjectMetrics</name>
+        <param>
+          <type><ref refid="class_project" kindref="compound">Project</ref></type>
+          <declname>project</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>outputFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Main.cpp" line="72" column="6" bodyfile="Main.cpp" bodystart="72" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a252fe2ebc7e65a3444aeddf4af80dc49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListEntities</definition>
+        <argsstring>(Project project, std::string outputFilename)</argsstring>
+        <name>ListEntities</name>
+        <param>
+          <type><ref refid="class_project" kindref="compound">Project</ref></type>
+          <declname>project</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>outputFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Main.cpp" line="98" column="6" bodyfile="Main.cpp" bodystart="98" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Main.cpp" line="160" column="5" bodyfile="Main.cpp" bodystart="160" bodyend="207"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Main.cpp"/>
+  </compounddef>
+</doxygen>

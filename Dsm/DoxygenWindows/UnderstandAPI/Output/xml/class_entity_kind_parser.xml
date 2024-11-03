@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_entity_kind_parser" kind="class" language="C++" prot="public">
+    <compoundname>EntityKindParser</compoundname>
+    <includes refid="_entity_kind_parser_8h" local="no">EntityKindParser.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_entity_kind_parser_1aa1f75c6015892a4e665b9040d604e191" prot="private" static="no" mutable="no">
+        <type><ref refid="_scope_8h_1aaecc53892786f2fa11e682f633af84c6" kindref="member">Scope</ref></type>
+        <definition>Scope EntityKindParser::_scope</definition>
+        <argsstring></argsstring>
+        <name>_scope</name>
+        <qualifiedname>EntityKindParser::_scope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EntityKindParser.h" line="11" column="7" bodyfile="EntityKindParser.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_kind_parser_1a75a0905f6cdc29a60cadd4667e3facf8" prot="private" static="no" mutable="no">
+        <type><ref refid="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3" kindref="member">EntityKind</ref></type>
+        <definition>EntityKind EntityKindParser::_entityKind</definition>
+        <argsstring></argsstring>
+        <name>_entityKind</name>
+        <qualifiedname>EntityKindParser::_entityKind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EntityKindParser.h" line="12" column="12" bodyfile="EntityKindParser.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_entity_kind_parser_1ad81011e798c5d45fc7e66cff079b0f77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EntityKindParser::EntityKindParser</definition>
+        <argsstring>(std::string kind, UdbLanguage udbLanguage)</argsstring>
+        <name>EntityKindParser</name>
+        <qualifiedname>EntityKindParser::EntityKindParser</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>UdbLanguage</type>
+          <declname>udbLanguage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EntityKindParser.h" line="14" column="1" bodyfile="EntityKindParser.cpp" bodystart="4" bodyend="20"/>
+        <references refid="class_entity_kind_parser_1a474c8cefa3d5bef2e91a3f0c37d39a70" compoundref="_entity_kind_parser_8cpp" startline="26" endline="391">ParseCppKinds</references>
+        <references refid="class_entity_kind_parser_1a9165c0462e1211d162da9530db06dee8" compoundref="_entity_kind_parser_8cpp" startline="393" endline="703">ParseCSharpKinds</references>
+        <references refid="class_entity_kind_parser_1a1d5bd8b3ca3fe3aa0b72a50903dc982c" compoundref="_entity_kind_parser_8cpp" startline="705" endline="875">ParseJavaKinds</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_kind_parser_1aff58fdab06fd13c1c6a1d1c9278ffd7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EntityKindParser::~EntityKindParser</definition>
+        <argsstring>()</argsstring>
+        <name>~EntityKindParser</name>
+        <qualifiedname>EntityKindParser::~EntityKindParser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EntityKindParser.h" line="15" column="1" bodyfile="EntityKindParser.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_entity_kind_parser_1a474c8cefa3d5bef2e91a3f0c37d39a70" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityKindParser::ParseCppKinds</definition>
+        <argsstring>(std::string kind)</argsstring>
+        <name>ParseCppKinds</name>
+        <qualifiedname>EntityKindParser::ParseCppKinds</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EntityKindParser.h" line="17" column="6" bodyfile="EntityKindParser.cpp" bodystart="26" bodyend="391"/>
+        <references refid="classstring_comparer_1a342fdecf61627e270c2ee6292bc4a9d2" compoundref="_string_comparer_8cpp" startline="14" endline="17">stringComparer::ContainsText</references>
+        <referencedby refid="class_entity_kind_parser_1ad81011e798c5d45fc7e66cff079b0f77" compoundref="_entity_kind_parser_8cpp" startline="4" endline="20">EntityKindParser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_kind_parser_1a9165c0462e1211d162da9530db06dee8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityKindParser::ParseCSharpKinds</definition>
+        <argsstring>(std::string kind)</argsstring>
+        <name>ParseCSharpKinds</name>
+        <qualifiedname>EntityKindParser::ParseCSharpKinds</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EntityKindParser.h" line="18" column="6" bodyfile="EntityKindParser.cpp" bodystart="393" bodyend="703"/>
+        <references refid="classstring_comparer_1a342fdecf61627e270c2ee6292bc4a9d2" compoundref="_string_comparer_8cpp" startline="14" endline="17">stringComparer::ContainsText</references>
+        <referencedby refid="class_entity_kind_parser_1ad81011e798c5d45fc7e66cff079b0f77" compoundref="_entity_kind_parser_8cpp" startline="4" endline="20">EntityKindParser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_kind_parser_1a1d5bd8b3ca3fe3aa0b72a50903dc982c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntityKindParser::ParseJavaKinds</definition>
+        <argsstring>(std::string kind)</argsstring>
+        <name>ParseJavaKinds</name>
+        <qualifiedname>EntityKindParser::ParseJavaKinds</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EntityKindParser.h" line="19" column="6" bodyfile="EntityKindParser.cpp" bodystart="705" bodyend="875"/>
+        <references refid="classstring_comparer_1a342fdecf61627e270c2ee6292bc4a9d2" compoundref="_string_comparer_8cpp" startline="14" endline="17">stringComparer::ContainsText</references>
+        <referencedby refid="class_entity_kind_parser_1ad81011e798c5d45fc7e66cff079b0f77" compoundref="_entity_kind_parser_8cpp" startline="4" endline="20">EntityKindParser</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>EntityKind</label>
+      </node>
+      <node id="1">
+        <label>EntityKindParser</label>
+        <link refid="class_entity_kind_parser"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-_scope</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_entityKind</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Scope</label>
+      </node>
+    </collaborationgraph>
+    <location file="EntityKindParser.h" line="8" column="1" bodyfile="EntityKindParser.h" bodystart="9" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_entity_kind_parser_1a75a0905f6cdc29a60cadd4667e3facf8" prot="private" virt="non-virtual"><scope>EntityKindParser</scope><name>_entityKind</name></member>
+      <member refid="class_entity_kind_parser_1aa1f75c6015892a4e665b9040d604e191" prot="private" virt="non-virtual"><scope>EntityKindParser</scope><name>_scope</name></member>
+      <member refid="class_entity_kind_parser_1ad81011e798c5d45fc7e66cff079b0f77" prot="public" virt="non-virtual"><scope>EntityKindParser</scope><name>EntityKindParser</name></member>
+      <member refid="class_entity_kind_parser_1a474c8cefa3d5bef2e91a3f0c37d39a70" prot="private" virt="non-virtual"><scope>EntityKindParser</scope><name>ParseCppKinds</name></member>
+      <member refid="class_entity_kind_parser_1a9165c0462e1211d162da9530db06dee8" prot="private" virt="non-virtual"><scope>EntityKindParser</scope><name>ParseCSharpKinds</name></member>
+      <member refid="class_entity_kind_parser_1a1d5bd8b3ca3fe3aa0b72a50903dc982c" prot="private" virt="non-virtual"><scope>EntityKindParser</scope><name>ParseJavaKinds</name></member>
+      <member refid="class_entity_kind_parser_1aff58fdab06fd13c1c6a1d1c9278ffd7f" prot="public" virt="non-virtual"><scope>EntityKindParser</scope><name>~EntityKindParser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

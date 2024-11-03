@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_entity_kind_8h" kind="file" language="C++">
+    <compoundname>EntityKind.h</compoundname>
+    <includedby refid="_entity_8h" local="yes">Entity.h</includedby>
+    <includedby refid="_entity_kind_parser_8h" local="yes">EntityKindParser.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>Entity.cpp</label>
+        <link refid="_entity_8cpp"/>
+      </node>
+      <node id="2">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EntityKind.h</label>
+        <link refid="_entity_kind_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>EntityKindParser.cpp</label>
+        <link refid="_entity_kind_parser_8cpp"/>
+      </node>
+      <node id="8">
+        <label>EntityKindParser.h</label>
+        <link refid="_entity_kind_parser_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>Project.cpp</label>
+        <link refid="_project_8cpp"/>
+      </node>
+      <node id="7">
+        <label>Reference.cpp</label>
+        <link refid="_reference_8cpp"/>
+      </node>
+      <node id="6">
+        <label>Reference.h</label>
+        <link refid="_reference_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>EntityKind</name>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3ae01806ab05fd9892d3c793dc48e9e20f" prot="public">
+          <name>HeaderFile</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3a58a9f1c463db1b701fe3cc29f7dffae6" prot="public">
+          <name>ImplementationFile</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3a2a0fd84a10cb743703f2f8986a7c838f" prot="public">
+          <name>Class</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3a3db9de4a8a63c1d91ba7fbd8d9b9b131" prot="public">
+          <name>Interface</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3a763a932e166ac85a6d2d1606e8649993" prot="public">
+          <name>Struct</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3a15dfdbfcfc62a618920124c6cd0cdd78" prot="public">
+          <name>Enum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3a7c28160675f07458236b323ef7ad46fc" prot="public">
+          <name>Attribute</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3af594f020b9d5eff2ec0eb42356898123" prot="public">
+          <name>Function</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3ab9a4c44e80a41420a064d301e264870d" prot="public">
+          <name>Parameter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3adb2621a2b268575c1fb091185d2b5e62" prot="public">
+          <name>OtherEntityKind</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EntityKind.h" line="3" column="1" bodyfile="EntityKind.h" bodystart="4" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EntityKind.h"/>
+  </compounddef>
+</doxygen>

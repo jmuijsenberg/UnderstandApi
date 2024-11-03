@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_metric" kind="class" language="C++" prot="public">
+    <compoundname>Metric</compoundname>
+    <includes refid="_metric_8h" local="no">Metric.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_metric_1a66aa408bdc1b1f63f75ed92a79f424c6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Metric::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>Metric::_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="9" column="13" bodyfile="Metric.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_metric_1a1f283882b26175eead46b39fc2ecd477" compoundref="_metric_8cpp" startline="15" endline="18">GetName</referencedby>
+        <referencedby refid="class_metric_1a9c11f52636941243f474249797aa6ec3" compoundref="_metric_8cpp" startline="3" endline="9">Metric</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_metric_1acca4776e47d261abd0f8547f3bbba4c4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Metric::_description</definition>
+        <argsstring></argsstring>
+        <name>_description</name>
+        <qualifiedname>Metric::_description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="10" column="13" bodyfile="Metric.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_metric_1af163ad9b820075f5fca46d3560bdf223" compoundref="_metric_8cpp" startline="20" endline="23">GetDescription</referencedby>
+        <referencedby refid="class_metric_1a9c11f52636941243f474249797aa6ec3" compoundref="_metric_8cpp" startline="3" endline="9">Metric</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_metric_1af07f25c0d11c768b766d902ac0122a61" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Metric::_isInteger</definition>
+        <argsstring></argsstring>
+        <name>_isInteger</name>
+        <qualifiedname>Metric::_isInteger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="11" column="6" bodyfile="Metric.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_metric_1ae511f867ce5e6b7e119054d564bbc287" compoundref="_metric_8cpp" startline="25" endline="28">IsInteger</referencedby>
+        <referencedby refid="class_metric_1a9c11f52636941243f474249797aa6ec3" compoundref="_metric_8cpp" startline="3" endline="9">Metric</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_metric_1a61c1f968913cc4efe233a3cc9bb2cdde" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Metric::_value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <qualifiedname>Metric::_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="12" column="8" bodyfile="Metric.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_metric_1ad4578abfdd951d7f6d3f181c8544ac97" compoundref="_metric_8cpp" startline="30" endline="33">GetValue</referencedby>
+        <referencedby refid="class_metric_1a9c11f52636941243f474249797aa6ec3" compoundref="_metric_8cpp" startline="3" endline="9">Metric</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_metric_1a9c11f52636941243f474249797aa6ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Metric::Metric</definition>
+        <argsstring>(UdbMetric udbMetric, double value)</argsstring>
+        <name>Metric</name>
+        <qualifiedname>Metric::Metric</qualifiedname>
+        <param>
+          <type>UdbMetric</type>
+          <declname>udbMetric</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="14" column="1" bodyfile="Metric.cpp" bodystart="3" bodyend="9"/>
+        <references refid="class_metric_1acca4776e47d261abd0f8547f3bbba4c4" compoundref="_metric_8h" startline="10">_description</references>
+        <references refid="class_metric_1af07f25c0d11c768b766d902ac0122a61" compoundref="_metric_8h" startline="11">_isInteger</references>
+        <references refid="class_metric_1a66aa408bdc1b1f63f75ed92a79f424c6" compoundref="_metric_8h" startline="9">_name</references>
+        <references refid="class_metric_1a61c1f968913cc4efe233a3cc9bb2cdde" compoundref="_metric_8h" startline="12">_value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_metric_1adc8e82a2fb75a49918fcf020b0d4ded7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Metric::~Metric</definition>
+        <argsstring>()</argsstring>
+        <name>~Metric</name>
+        <qualifiedname>Metric::~Metric</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="15" column="1" bodyfile="Metric.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_metric_1a1f283882b26175eead46b39fc2ecd477" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Metric::GetName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetName</name>
+        <qualifiedname>Metric::GetName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="17" column="13" bodyfile="Metric.cpp" bodystart="15" bodyend="18"/>
+        <references refid="class_metric_1a66aa408bdc1b1f63f75ed92a79f424c6" compoundref="_metric_8h" startline="9">_name</references>
+        <referencedby refid="_main_8cpp_1a33ee46920e96b4e84c935327986a4968" compoundref="_main_8cpp" startline="72" endline="96">ListProjectMetrics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_metric_1af163ad9b820075f5fca46d3560bdf223" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Metric::GetDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDescription</name>
+        <qualifiedname>Metric::GetDescription</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="18" column="13" bodyfile="Metric.cpp" bodystart="20" bodyend="23"/>
+        <references refid="class_metric_1acca4776e47d261abd0f8547f3bbba4c4" compoundref="_metric_8h" startline="10">_description</references>
+      </memberdef>
+      <memberdef kind="function" id="class_metric_1ae511f867ce5e6b7e119054d564bbc287" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Metric::IsInteger</definition>
+        <argsstring>() const</argsstring>
+        <name>IsInteger</name>
+        <qualifiedname>Metric::IsInteger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="19" column="6" bodyfile="Metric.cpp" bodystart="25" bodyend="28"/>
+        <references refid="class_metric_1af07f25c0d11c768b766d902ac0122a61" compoundref="_metric_8h" startline="11">_isInteger</references>
+        <referencedby refid="_main_8cpp_1a33ee46920e96b4e84c935327986a4968" compoundref="_main_8cpp" startline="72" endline="96">ListProjectMetrics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_metric_1ad4578abfdd951d7f6d3f181c8544ac97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Metric::GetValue</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValue</name>
+        <qualifiedname>Metric::GetValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Metric.h" line="20" column="8" bodyfile="Metric.cpp" bodystart="30" bodyend="33"/>
+        <references refid="class_metric_1a61c1f968913cc4efe233a3cc9bb2cdde" compoundref="_metric_8h" startline="12">_value</references>
+        <referencedby refid="_main_8cpp_1a33ee46920e96b4e84c935327986a4968" compoundref="_main_8cpp" startline="72" endline="96">ListProjectMetrics</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Metric</label>
+        <link refid="class_metric"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-_description</edgelabel>
+          <edgelabel>-_name</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-_isInteger</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-_value</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>bool</label>
+      </node>
+      <node id="5">
+        <label>double</label>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Metric.h" line="6" column="1" bodyfile="Metric.h" bodystart="7" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_metric_1acca4776e47d261abd0f8547f3bbba4c4" prot="private" virt="non-virtual"><scope>Metric</scope><name>_description</name></member>
+      <member refid="class_metric_1af07f25c0d11c768b766d902ac0122a61" prot="private" virt="non-virtual"><scope>Metric</scope><name>_isInteger</name></member>
+      <member refid="class_metric_1a66aa408bdc1b1f63f75ed92a79f424c6" prot="private" virt="non-virtual"><scope>Metric</scope><name>_name</name></member>
+      <member refid="class_metric_1a61c1f968913cc4efe233a3cc9bb2cdde" prot="private" virt="non-virtual"><scope>Metric</scope><name>_value</name></member>
+      <member refid="class_metric_1af163ad9b820075f5fca46d3560bdf223" prot="public" virt="non-virtual"><scope>Metric</scope><name>GetDescription</name></member>
+      <member refid="class_metric_1a1f283882b26175eead46b39fc2ecd477" prot="public" virt="non-virtual"><scope>Metric</scope><name>GetName</name></member>
+      <member refid="class_metric_1ad4578abfdd951d7f6d3f181c8544ac97" prot="public" virt="non-virtual"><scope>Metric</scope><name>GetValue</name></member>
+      <member refid="class_metric_1ae511f867ce5e6b7e119054d564bbc287" prot="public" virt="non-virtual"><scope>Metric</scope><name>IsInteger</name></member>
+      <member refid="class_metric_1a9c11f52636941243f474249797aa6ec3" prot="public" virt="non-virtual"><scope>Metric</scope><name>Metric</name></member>
+      <member refid="class_metric_1adc8e82a2fb75a49918fcf020b0d4ded7" prot="public" virt="non-virtual"><scope>Metric</scope><name>~Metric</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

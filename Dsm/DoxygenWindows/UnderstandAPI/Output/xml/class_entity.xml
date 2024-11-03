@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_entity" kind="class" language="C++" prot="public">
+    <compoundname>Entity</compoundname>
+    <includes refid="_entity_8h" local="no">Entity.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_entity_1a726707b7b7ebb9d12983eee1be7c8e43" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Entity::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <qualifiedname>Entity::_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="18" column="5" bodyfile="Entity.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1a478be4b3bc1cc77e5fd92a7dda6689a4" compoundref="_entity_8cpp" startline="45" endline="48">GetId</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1a660ccfe49747dd3d805cb06beb189f25" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Entity::_namespace</definition>
+        <argsstring></argsstring>
+        <name>_namespace</name>
+        <qualifiedname>Entity::_namespace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="19" column="13" bodyfile="Entity.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1a36c6875f48f907e403c045b129948b80" compoundref="_entity_8cpp" startline="50" endline="53">GetNamespace</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1a6c98936d25c3baeea5c1fad751c8d9c9" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Entity::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>Entity::_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="20" column="13" bodyfile="Entity.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1a1d72f5003f9eed6edb81c17ff4f888cd" compoundref="_entity_8cpp" startline="55" endline="58">GetName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1a4dec2d4bd03dfc266d77e7c501448341" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Entity::_type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <qualifiedname>Entity::_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="21" column="13" bodyfile="Entity.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1a906ca5c844298c0258bda83563f925a0" compoundref="_entity_8cpp" startline="60" endline="63">GetType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1a66f6d2579cd8a276c9b25d607b5912e3" prot="private" static="no" mutable="no">
+        <type><ref refid="_scope_8h_1aaecc53892786f2fa11e682f633af84c6" kindref="member">Scope</ref></type>
+        <definition>Scope Entity::_scope</definition>
+        <argsstring></argsstring>
+        <name>_scope</name>
+        <qualifiedname>Entity::_scope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="22" column="7" bodyfile="Entity.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1a6f275046f7ea9c67f736359550a9c6df" compoundref="_entity_8cpp" startline="65" endline="68">GetScope</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1a0021e08f8490591ae2c8a773c85dcc56" prot="private" static="no" mutable="no">
+        <type><ref refid="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3" kindref="member">EntityKind</ref></type>
+        <definition>EntityKind Entity::_kind</definition>
+        <argsstring></argsstring>
+        <name>_kind</name>
+        <qualifiedname>Entity::_kind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="23" column="12" bodyfile="Entity.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1aa1370a5c927421dca0f2df0913eabe96" compoundref="_entity_8cpp" startline="70" endline="73">GetKind</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1aafb7f353b492e605bbb3f718744c439f" prot="private" static="no" mutable="no">
+        <type><ref refid="_language_8h_1a315ca917ad583797f709ea477dd28705" kindref="member">Language</ref></type>
+        <definition>Language Entity::_language</definition>
+        <argsstring></argsstring>
+        <name>_language</name>
+        <qualifiedname>Entity::_language</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="24" column="10" bodyfile="Entity.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1a79c9488e06ea0e42216fc471dea05930" compoundref="_entity_8cpp" startline="75" endline="78">GetLanguage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1aede47e392729d19ba5cd6bd635a007a4" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_reference" kindref="compound">Reference</ref> * &gt;</type>
+        <definition>std::list&lt;Reference*&gt; Entity::_references</definition>
+        <argsstring></argsstring>
+        <name>_references</name>
+        <qualifiedname>Entity::_references</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="25" column="11" bodyfile="Entity.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1abda054125e3d1652978a15b56a9e8e8d" compoundref="_entity_8cpp" startline="80" endline="83">GetReferences</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1a43e6ccc2cb88cc7a32dd2466678e7bda" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_metric" kindref="compound">Metric</ref> * &gt;</type>
+        <definition>std::list&lt;Metric*&gt; Entity::_metrics</definition>
+        <argsstring></argsstring>
+        <name>_metrics</name>
+        <qualifiedname>Entity::_metrics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="26" column="11" bodyfile="Entity.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1a25b389f406cd4af4196cb1aa7529b43d" compoundref="_entity_8cpp" startline="85" endline="88">GetMetrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1a3acd7bd8d792b22d925fd1675b417e34" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Entity::_comment</definition>
+        <argsstring></argsstring>
+        <name>_comment</name>
+        <qualifiedname>Entity::_comment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="27" column="13" bodyfile="Entity.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1adb644dcdf081606c0aad27bde551dd57" compoundref="_entity_8cpp" startline="90" endline="93">GetComment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_entity_1a5dfdb2c9f45fb2e84d38703637e60127" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Entity::_kindText</definition>
+        <argsstring></argsstring>
+        <name>_kindText</name>
+        <qualifiedname>Entity::_kindText</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="28" column="13" bodyfile="Entity.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" compoundref="_entity_8cpp" startline="6" endline="39">Entity</referencedby>
+        <referencedby refid="class_entity_1a2728b15d48d4fcf58973e19ffe4b1004" compoundref="_entity_8cpp" startline="95" endline="98">GetKindText</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_entity_1a5a24d92e6422f27731740e39dfdd1342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Entity::Entity</definition>
+        <argsstring>(UdbEntity udbEntity, UdbLanguage udbLanguage)</argsstring>
+        <name>Entity</name>
+        <qualifiedname>Entity::Entity</qualifiedname>
+        <param>
+          <type>UdbEntity</type>
+          <declname>udbEntity</declname>
+        </param>
+        <param>
+          <type>UdbLanguage</type>
+          <declname>udbLanguage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="30" column="1" bodyfile="Entity.cpp" bodystart="6" bodyend="39"/>
+        <references refid="class_entity_1a3acd7bd8d792b22d925fd1675b417e34" compoundref="_entity_8h" startline="27">_comment</references>
+        <references refid="class_entity_1a726707b7b7ebb9d12983eee1be7c8e43" compoundref="_entity_8h" startline="18">_id</references>
+        <references refid="class_entity_1a0021e08f8490591ae2c8a773c85dcc56" compoundref="_entity_8h" startline="23">_kind</references>
+        <references refid="class_entity_1a5dfdb2c9f45fb2e84d38703637e60127" compoundref="_entity_8h" startline="28">_kindText</references>
+        <references refid="class_entity_1aafb7f353b492e605bbb3f718744c439f" compoundref="_entity_8h" startline="24">_language</references>
+        <references refid="class_entity_1a43e6ccc2cb88cc7a32dd2466678e7bda" compoundref="_entity_8h" startline="26">_metrics</references>
+        <references refid="class_entity_1a6c98936d25c3baeea5c1fad751c8d9c9" compoundref="_entity_8h" startline="20">_name</references>
+        <references refid="class_entity_1a660ccfe49747dd3d805cb06beb189f25" compoundref="_entity_8h" startline="19">_namespace</references>
+        <references refid="class_entity_1aede47e392729d19ba5cd6bd635a007a4" compoundref="_entity_8h" startline="25">_references</references>
+        <references refid="class_entity_1a66f6d2579cd8a276c9b25d607b5912e3" compoundref="_entity_8h" startline="22">_scope</references>
+        <references refid="class_entity_1a4dec2d4bd03dfc266d77e7c501448341" compoundref="_entity_8h" startline="21">_type</references>
+        <references refid="class_util_1a58d7917635be401cbf98131bbe5019ed" compoundref="_util_8cpp" startline="4" endline="31">Util::GetLanguage</references>
+        <references refid="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3adb2621a2b268575c1fb091185d2b5e62" compoundref="_entity_kind_8h" startline="14">OtherEntityKind</references>
+        <references refid="_scope_8h_1aaecc53892786f2fa11e682f633af84c6a56310acf6f15f74f2d29751e3f9303a7" compoundref="_scope_8h" startline="10">OtherScope</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1adf6d3f7cb1b2ba029b6b048a395cc8ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Entity::~Entity</definition>
+        <argsstring>()</argsstring>
+        <name>~Entity</name>
+        <qualifiedname>Entity::~Entity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="31" column="1" bodyfile="Entity.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a478be4b3bc1cc77e5fd92a7dda6689a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Entity::GetId</definition>
+        <argsstring>() const</argsstring>
+        <name>GetId</name>
+        <qualifiedname>Entity::GetId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="33" column="5" bodyfile="Entity.cpp" bodystart="45" bodyend="48"/>
+        <references refid="class_entity_1a726707b7b7ebb9d12983eee1be7c8e43" compoundref="_entity_8h" startline="18">_id</references>
+        <referencedby refid="_main_8cpp_1a252fe2ebc7e65a3444aeddf4af80dc49" compoundref="_main_8cpp" startline="98" endline="158">ListEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a36c6875f48f907e403c045b129948b80" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Entity::GetNamespace</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNamespace</name>
+        <qualifiedname>Entity::GetNamespace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="34" column="13" bodyfile="Entity.cpp" bodystart="50" bodyend="53"/>
+        <references refid="class_entity_1a660ccfe49747dd3d805cb06beb189f25" compoundref="_entity_8h" startline="19">_namespace</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a1d72f5003f9eed6edb81c17ff4f888cd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Entity::GetName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetName</name>
+        <qualifiedname>Entity::GetName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="35" column="13" bodyfile="Entity.cpp" bodystart="55" bodyend="58"/>
+        <references refid="class_entity_1a6c98936d25c3baeea5c1fad751c8d9c9" compoundref="_entity_8h" startline="20">_name</references>
+        <referencedby refid="_main_8cpp_1a252fe2ebc7e65a3444aeddf4af80dc49" compoundref="_main_8cpp" startline="98" endline="158">ListEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a906ca5c844298c0258bda83563f925a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Entity::GetType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetType</name>
+        <qualifiedname>Entity::GetType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="36" column="13" bodyfile="Entity.cpp" bodystart="60" bodyend="63"/>
+        <references refid="class_entity_1a4dec2d4bd03dfc266d77e7c501448341" compoundref="_entity_8h" startline="21">_type</references>
+        <referencedby refid="_main_8cpp_1a252fe2ebc7e65a3444aeddf4af80dc49" compoundref="_main_8cpp" startline="98" endline="158">ListEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a6f275046f7ea9c67f736359550a9c6df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_scope_8h_1aaecc53892786f2fa11e682f633af84c6" kindref="member">Scope</ref></type>
+        <definition>Scope Entity::GetScope</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScope</name>
+        <qualifiedname>Entity::GetScope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="37" column="7" bodyfile="Entity.cpp" bodystart="65" bodyend="68"/>
+        <references refid="class_entity_1a66f6d2579cd8a276c9b25d607b5912e3" compoundref="_entity_8h" startline="22">_scope</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1aa1370a5c927421dca0f2df0913eabe96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_entity_kind_8h_1ad90c5929a39651126870429e8f6689b3" kindref="member">EntityKind</ref></type>
+        <definition>EntityKind Entity::GetKind</definition>
+        <argsstring>() const</argsstring>
+        <name>GetKind</name>
+        <qualifiedname>Entity::GetKind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="38" column="12" bodyfile="Entity.cpp" bodystart="70" bodyend="73"/>
+        <references refid="class_entity_1a0021e08f8490591ae2c8a773c85dcc56" compoundref="_entity_8h" startline="23">_kind</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a79c9488e06ea0e42216fc471dea05930" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_language_8h_1a315ca917ad583797f709ea477dd28705" kindref="member">Language</ref></type>
+        <definition>Language Entity::GetLanguage</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLanguage</name>
+        <qualifiedname>Entity::GetLanguage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="39" column="10" bodyfile="Entity.cpp" bodystart="75" bodyend="78"/>
+        <references refid="class_entity_1aafb7f353b492e605bbb3f718744c439f" compoundref="_entity_8h" startline="24">_language</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1abda054125e3d1652978a15b56a9e8e8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_reference" kindref="compound">Reference</ref> * &gt;</type>
+        <definition>std::list&lt; Reference * &gt; Entity::GetReferences</definition>
+        <argsstring>() const</argsstring>
+        <name>GetReferences</name>
+        <qualifiedname>Entity::GetReferences</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="40" column="11" bodyfile="Entity.cpp" bodystart="80" bodyend="83"/>
+        <references refid="class_entity_1aede47e392729d19ba5cd6bd635a007a4" compoundref="_entity_8h" startline="25">_references</references>
+        <referencedby refid="_main_8cpp_1a252fe2ebc7e65a3444aeddf4af80dc49" compoundref="_main_8cpp" startline="98" endline="158">ListEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a25b389f406cd4af4196cb1aa7529b43d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_metric" kindref="compound">Metric</ref> * &gt;</type>
+        <definition>std::list&lt; Metric * &gt; Entity::GetMetrics</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMetrics</name>
+        <qualifiedname>Entity::GetMetrics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="41" column="11" bodyfile="Entity.cpp" bodystart="85" bodyend="88"/>
+        <references refid="class_entity_1a43e6ccc2cb88cc7a32dd2466678e7bda" compoundref="_entity_8h" startline="26">_metrics</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1adb644dcdf081606c0aad27bde551dd57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Entity::GetComment</definition>
+        <argsstring>() const</argsstring>
+        <name>GetComment</name>
+        <qualifiedname>Entity::GetComment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="42" column="13" bodyfile="Entity.cpp" bodystart="90" bodyend="93"/>
+        <references refid="class_entity_1a3acd7bd8d792b22d925fd1675b417e34" compoundref="_entity_8h" startline="27">_comment</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a2728b15d48d4fcf58973e19ffe4b1004" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Entity::GetKindText</definition>
+        <argsstring>() const</argsstring>
+        <name>GetKindText</name>
+        <qualifiedname>Entity::GetKindText</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Entity.h" line="43" column="13" bodyfile="Entity.cpp" bodystart="95" bodyend="98"/>
+        <references refid="class_entity_1a5dfdb2c9f45fb2e84d38703637e60127" compoundref="_entity_8h" startline="28">_kindText</references>
+        <referencedby refid="_main_8cpp_1a252fe2ebc7e65a3444aeddf4af80dc49" compoundref="_main_8cpp" startline="98" endline="158">ListEntities</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Entity</label>
+        <link refid="class_entity"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-_id</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_comment</edgelabel>
+          <edgelabel>-_kindText</edgelabel>
+          <edgelabel>-_name</edgelabel>
+          <edgelabel>-_namespace</edgelabel>
+          <edgelabel>-_type</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-_scope</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-_kind</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-_language</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-_references</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-_metrics</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>EntityKind</label>
+      </node>
+      <node id="7">
+        <label>Language</label>
+      </node>
+      <node id="12">
+        <label>Metric</label>
+        <link refid="class_metric"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_description</edgelabel>
+          <edgelabel>-_name</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-_isInteger</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>-_value</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Reference</label>
+        <link refid="class_reference"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-_column</edgelabel>
+          <edgelabel>-_line</edgelabel>
+          <edgelabel>-_sourceEntityId</edgelabel>
+          <edgelabel>-_targetEntityId</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_file</edgelabel>
+          <edgelabel>-_kindText</edgelabel>
+          <edgelabel>-_sourceEntityKindName</edgelabel>
+          <edgelabel>-_sourceEntityName</edgelabel>
+          <edgelabel>-_targetEntityKindName</edgelabel>
+          <edgelabel>-_targetEntityName</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>-_kind</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ReferenceKind</label>
+      </node>
+      <node id="5">
+        <label>Scope</label>
+      </node>
+      <node id="13">
+        <label>bool</label>
+      </node>
+      <node id="14">
+        <label>double</label>
+      </node>
+      <node id="2">
+        <label>int</label>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="11">
+        <label>std::list&lt; Metric * &gt;</label>
+        <childnode refid="12" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::list&lt; Reference * &gt;</label>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Entity.h" line="15" column="1" bodyfile="Entity.h" bodystart="16" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_entity_1a3acd7bd8d792b22d925fd1675b417e34" prot="private" virt="non-virtual"><scope>Entity</scope><name>_comment</name></member>
+      <member refid="class_entity_1a726707b7b7ebb9d12983eee1be7c8e43" prot="private" virt="non-virtual"><scope>Entity</scope><name>_id</name></member>
+      <member refid="class_entity_1a0021e08f8490591ae2c8a773c85dcc56" prot="private" virt="non-virtual"><scope>Entity</scope><name>_kind</name></member>
+      <member refid="class_entity_1a5dfdb2c9f45fb2e84d38703637e60127" prot="private" virt="non-virtual"><scope>Entity</scope><name>_kindText</name></member>
+      <member refid="class_entity_1aafb7f353b492e605bbb3f718744c439f" prot="private" virt="non-virtual"><scope>Entity</scope><name>_language</name></member>
+      <member refid="class_entity_1a43e6ccc2cb88cc7a32dd2466678e7bda" prot="private" virt="non-virtual"><scope>Entity</scope><name>_metrics</name></member>
+      <member refid="class_entity_1a6c98936d25c3baeea5c1fad751c8d9c9" prot="private" virt="non-virtual"><scope>Entity</scope><name>_name</name></member>
+      <member refid="class_entity_1a660ccfe49747dd3d805cb06beb189f25" prot="private" virt="non-virtual"><scope>Entity</scope><name>_namespace</name></member>
+      <member refid="class_entity_1aede47e392729d19ba5cd6bd635a007a4" prot="private" virt="non-virtual"><scope>Entity</scope><name>_references</name></member>
+      <member refid="class_entity_1a66f6d2579cd8a276c9b25d607b5912e3" prot="private" virt="non-virtual"><scope>Entity</scope><name>_scope</name></member>
+      <member refid="class_entity_1a4dec2d4bd03dfc266d77e7c501448341" prot="private" virt="non-virtual"><scope>Entity</scope><name>_type</name></member>
+      <member refid="class_entity_1a5a24d92e6422f27731740e39dfdd1342" prot="public" virt="non-virtual"><scope>Entity</scope><name>Entity</name></member>
+      <member refid="class_entity_1adb644dcdf081606c0aad27bde551dd57" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetComment</name></member>
+      <member refid="class_entity_1a478be4b3bc1cc77e5fd92a7dda6689a4" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetId</name></member>
+      <member refid="class_entity_1aa1370a5c927421dca0f2df0913eabe96" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetKind</name></member>
+      <member refid="class_entity_1a2728b15d48d4fcf58973e19ffe4b1004" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetKindText</name></member>
+      <member refid="class_entity_1a79c9488e06ea0e42216fc471dea05930" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetLanguage</name></member>
+      <member refid="class_entity_1a25b389f406cd4af4196cb1aa7529b43d" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetMetrics</name></member>
+      <member refid="class_entity_1a1d72f5003f9eed6edb81c17ff4f888cd" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetName</name></member>
+      <member refid="class_entity_1a36c6875f48f907e403c045b129948b80" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetNamespace</name></member>
+      <member refid="class_entity_1abda054125e3d1652978a15b56a9e8e8d" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetReferences</name></member>
+      <member refid="class_entity_1a6f275046f7ea9c67f736359550a9c6df" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetScope</name></member>
+      <member refid="class_entity_1a906ca5c844298c0258bda83563f925a0" prot="public" virt="non-virtual"><scope>Entity</scope><name>GetType</name></member>
+      <member refid="class_entity_1adf6d3f7cb1b2ba029b6b048a395cc8ae" prot="public" virt="non-virtual"><scope>Entity</scope><name>~Entity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

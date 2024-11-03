@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_entity_8cpp" kind="file" language="C++">
+    <compoundname>Entity.cpp</compoundname>
+    <includes refid="_entity_8h" local="yes">Entity.h</includes>
+    <includes refid="_reference_8h" local="yes">Reference.h</includes>
+    <includes refid="_metric_8h" local="yes">Metric.h</includes>
+    <includes refid="_util_8h" local="yes">Util.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Entity.cpp</label>
+        <link refid="_entity_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>EntityKind.h</label>
+        <link refid="_entity_kind_8h"/>
+      </node>
+      <node id="8">
+        <label>Language.h</label>
+        <link refid="_language_8h"/>
+      </node>
+      <node id="11">
+        <label>Metric.h</label>
+        <link refid="_metric_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Reference.h</label>
+        <link refid="_reference_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ReferenceKind.h</label>
+        <link refid="_reference_kind_8h"/>
+      </node>
+      <node id="6">
+        <label>Scope.h</label>
+        <link refid="_scope_8h"/>
+      </node>
+      <node id="12">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>list</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>udb.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Entity.cpp"/>
+  </compounddef>
+</doxygen>

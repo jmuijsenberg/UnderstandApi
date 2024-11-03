@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classstring_comparer" kind="class" language="C++" prot="public">
+    <compoundname>stringComparer</compoundname>
+    <includes refid="_string_comparer_8h" local="no">StringComparer.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstring_comparer_1a5cceb8421d44ccec58265557659a8c2a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string stringComparer::_text</definition>
+        <argsstring></argsstring>
+        <name>_text</name>
+        <qualifiedname>stringComparer::_text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StringComparer.h" line="8" column="13" bodyfile="StringComparer.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classstring_comparer_1a342fdecf61627e270c2ee6292bc4a9d2" compoundref="_string_comparer_8cpp" startline="14" endline="17">ContainsText</referencedby>
+        <referencedby refid="classstring_comparer_1a4c7e0bcdecc2739954e5323c6ceaa9cd" compoundref="_string_comparer_8cpp" startline="5" endline="8">stringComparer</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstring_comparer_1a4c7e0bcdecc2739954e5323c6ceaa9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stringComparer::stringComparer</definition>
+        <argsstring>(std::string text)</argsstring>
+        <name>stringComparer</name>
+        <qualifiedname>stringComparer::stringComparer</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StringComparer.h" line="10" column="1" bodyfile="StringComparer.cpp" bodystart="5" bodyend="8"/>
+        <references refid="classstring_comparer_1a5cceb8421d44ccec58265557659a8c2a" compoundref="_string_comparer_8h" startline="8">_text</references>
+      </memberdef>
+      <memberdef kind="function" id="classstring_comparer_1adf24e3c8bfe91a19de46edff729e4237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stringComparer::~stringComparer</definition>
+        <argsstring>()</argsstring>
+        <name>~stringComparer</name>
+        <qualifiedname>stringComparer::~stringComparer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StringComparer.h" line="11" column="1" bodyfile="StringComparer.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classstring_comparer_1a342fdecf61627e270c2ee6292bc4a9d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool stringComparer::ContainsText</definition>
+        <argsstring>(std::string substring) const</argsstring>
+        <name>ContainsText</name>
+        <qualifiedname>stringComparer::ContainsText</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>substring</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StringComparer.h" line="13" column="6" bodyfile="StringComparer.cpp" bodystart="14" bodyend="17"/>
+        <references refid="classstring_comparer_1a5cceb8421d44ccec58265557659a8c2a" compoundref="_string_comparer_8h" startline="8">_text</references>
+        <referencedby refid="class_entity_kind_parser_1a474c8cefa3d5bef2e91a3f0c37d39a70" compoundref="_entity_kind_parser_8cpp" startline="26" endline="391">EntityKindParser::ParseCppKinds</referencedby>
+        <referencedby refid="class_reference_kinds_parser_1a120a1d9610cb965da21fca8d1d80e1d7" compoundref="_reference_kinds_parser_8cpp" startline="26" endline="151">ReferenceKindsParser::ParseCppKinds</referencedby>
+        <referencedby refid="class_entity_kind_parser_1a9165c0462e1211d162da9530db06dee8" compoundref="_entity_kind_parser_8cpp" startline="393" endline="703">EntityKindParser::ParseCSharpKinds</referencedby>
+        <referencedby refid="class_reference_kinds_parser_1a58bf2d88bee58d2f76074417b2a67f8f" compoundref="_reference_kinds_parser_8cpp" startline="153" endline="210">ReferenceKindsParser::ParseCSharpKinds</referencedby>
+        <referencedby refid="class_entity_kind_parser_1a1d5bd8b3ca3fe3aa0b72a50903dc982c" compoundref="_entity_kind_parser_8cpp" startline="705" endline="875">EntityKindParser::ParseJavaKinds</referencedby>
+        <referencedby refid="class_reference_kinds_parser_1ada35c48942006b02d13b091f2c8467f3" compoundref="_reference_kinds_parser_8cpp" startline="212" endline="273">ReferenceKindsParser::ParseJavaKinds</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>stringComparer</label>
+        <link refid="classstring_comparer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-_text</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="StringComparer.h" line="5" column="1" bodyfile="StringComparer.h" bodystart="6" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classstring_comparer_1a5cceb8421d44ccec58265557659a8c2a" prot="private" virt="non-virtual"><scope>stringComparer</scope><name>_text</name></member>
+      <member refid="classstring_comparer_1a342fdecf61627e270c2ee6292bc4a9d2" prot="public" virt="non-virtual"><scope>stringComparer</scope><name>ContainsText</name></member>
+      <member refid="classstring_comparer_1a4c7e0bcdecc2739954e5323c6ceaa9cd" prot="public" virt="non-virtual"><scope>stringComparer</scope><name>stringComparer</name></member>
+      <member refid="classstring_comparer_1adf24e3c8bfe91a19de46edff729e4237" prot="public" virt="non-virtual"><scope>stringComparer</scope><name>~stringComparer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

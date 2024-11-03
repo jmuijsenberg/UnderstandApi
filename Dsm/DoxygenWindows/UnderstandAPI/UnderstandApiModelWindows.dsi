@@ -1,0 +1,238 @@
+<system>
+  <metadatagroup>
+  </metadatagroup>
+  <elements>
+    <element id="1" name="Entity.class.Entity.variable._id.h" type="variable" annotation="" />
+    <element id="2" name="Entity.class.Entity.variable._namespace.h" type="variable" annotation="" />
+    <element id="3" name="Entity.class.Entity.variable._name.h" type="variable" annotation="" />
+    <element id="4" name="Entity.class.Entity.variable._type.h" type="variable" annotation="" />
+    <element id="5" name="Entity.class.Entity.variable._scope.h" type="variable" annotation="" />
+    <element id="6" name="Entity.class.Entity.variable._kind.h" type="variable" annotation="" />
+    <element id="7" name="Entity.class.Entity.variable._language.h" type="variable" annotation="" />
+    <element id="8" name="Entity.class.Entity.variable._references.h" type="variable" annotation="" />
+    <element id="9" name="Entity.class.Entity.variable._metrics.h" type="variable" annotation="" />
+    <element id="10" name="Entity.class.Entity.variable._comment.h" type="variable" annotation="" />
+    <element id="11" name="Entity.class.Entity.variable._kindText.h" type="variable" annotation="" />
+    <element id="12" name="Entity.class.Entity.function.Entity.h" type="function" annotation="" />
+    <element id="13" name="Entity.class.Entity.function.~Entity.h" type="function" annotation="" />
+    <element id="14" name="Entity.class.Entity.function.GetId.h" type="function" annotation="" />
+    <element id="15" name="Entity.class.Entity.function.GetNamespace.h" type="function" annotation="" />
+    <element id="16" name="Entity.class.Entity.function.GetName.h" type="function" annotation="" />
+    <element id="17" name="Entity.class.Entity.function.GetType.h" type="function" annotation="" />
+    <element id="18" name="Entity.class.Entity.function.GetScope.h" type="function" annotation="" />
+    <element id="19" name="Entity.class.Entity.function.GetKind.h" type="function" annotation="" />
+    <element id="20" name="Entity.class.Entity.function.GetLanguage.h" type="function" annotation="" />
+    <element id="21" name="Entity.class.Entity.function.GetReferences.h" type="function" annotation="" />
+    <element id="22" name="Entity.class.Entity.function.GetMetrics.h" type="function" annotation="" />
+    <element id="23" name="Entity.class.Entity.function.GetComment.h" type="function" annotation="" />
+    <element id="24" name="Entity.class.Entity.function.GetKindText.h" type="function" annotation="" />
+    <element id="25" name="EntityKindParser.class.EntityKindParser.variable._scope.h" type="variable" annotation="" />
+    <element id="26" name="EntityKindParser.class.EntityKindParser.variable._entityKind.h" type="variable" annotation="" />
+    <element id="27" name="EntityKindParser.class.EntityKindParser.function.EntityKindParser.h" type="function" annotation="" />
+    <element id="28" name="EntityKindParser.class.EntityKindParser.function.~EntityKindParser.h" type="function" annotation="" />
+    <element id="29" name="EntityKindParser.class.EntityKindParser.function.ParseCppKinds.h" type="function" annotation="" />
+    <element id="30" name="EntityKindParser.class.EntityKindParser.function.ParseCSharpKinds.h" type="function" annotation="" />
+    <element id="31" name="EntityKindParser.class.EntityKindParser.function.ParseJavaKinds.h" type="function" annotation="" />
+    <element id="32" name="Metric.class.Metric.variable._name.h" type="variable" annotation="" />
+    <element id="33" name="Metric.class.Metric.variable._description.h" type="variable" annotation="" />
+    <element id="34" name="Metric.class.Metric.variable._isInteger.h" type="variable" annotation="" />
+    <element id="35" name="Metric.class.Metric.variable._value.h" type="variable" annotation="" />
+    <element id="36" name="Metric.class.Metric.function.Metric.h" type="function" annotation="" />
+    <element id="37" name="Metric.class.Metric.function.~Metric.h" type="function" annotation="" />
+    <element id="38" name="Metric.class.Metric.function.GetName.h" type="function" annotation="" />
+    <element id="39" name="Metric.class.Metric.function.GetDescription.h" type="function" annotation="" />
+    <element id="40" name="Metric.class.Metric.function.IsInteger.h" type="function" annotation="" />
+    <element id="41" name="Metric.class.Metric.function.GetValue.h" type="function" annotation="" />
+    <element id="42" name="Project.class.Project.variable._filename.h" type="variable" annotation="" />
+    <element id="43" name="Project.class.Project.variable._isOpen.h" type="variable" annotation="" />
+    <element id="44" name="Project.class.Project.function.Project.h" type="function" annotation="" />
+    <element id="45" name="Project.class.Project.function.~Project.h" type="function" annotation="" />
+    <element id="46" name="Project.class.Project.function.Open.h" type="function" annotation="" />
+    <element id="47" name="Project.class.Project.function.Close.h" type="function" annotation="" />
+    <element id="48" name="Project.class.Project.function.GetLanguage.h" type="function" annotation="" />
+    <element id="49" name="Project.class.Project.function.GetName.h" type="function" annotation="" />
+    <element id="50" name="Project.class.Project.function.GetBuild.h" type="function" annotation="" />
+    <element id="51" name="Project.class.Project.function.GetFiles.h" type="function" annotation="" />
+    <element id="52" name="Project.class.Project.function.GetEntities.h" type="function" annotation="" />
+    <element id="53" name="Project.class.Project.function.GetMetrics.h" type="function" annotation="" />
+    <element id="54" name="Reference.class.Reference.variable._sourceEntityId.h" type="variable" annotation="" />
+    <element id="55" name="Reference.class.Reference.variable._sourceEntityName.h" type="variable" annotation="" />
+    <element id="56" name="Reference.class.Reference.variable._sourceEntityKindName.h" type="variable" annotation="" />
+    <element id="57" name="Reference.class.Reference.variable._targetEntityId.h" type="variable" annotation="" />
+    <element id="58" name="Reference.class.Reference.variable._targetEntityName.h" type="variable" annotation="" />
+    <element id="59" name="Reference.class.Reference.variable._targetEntityKindName.h" type="variable" annotation="" />
+    <element id="60" name="Reference.class.Reference.variable._kind.h" type="variable" annotation="" />
+    <element id="61" name="Reference.class.Reference.variable._file.h" type="variable" annotation="" />
+    <element id="62" name="Reference.class.Reference.variable._line.h" type="variable" annotation="" />
+    <element id="63" name="Reference.class.Reference.variable._column.h" type="variable" annotation="" />
+    <element id="64" name="Reference.class.Reference.variable._kindText.h" type="variable" annotation="" />
+    <element id="65" name="Reference.class.Reference.function.Reference.h" type="function" annotation="" />
+    <element id="66" name="Reference.class.Reference.function.~Reference.h" type="function" annotation="" />
+    <element id="67" name="Reference.class.Reference.function.GetSourceEntityId.h" type="function" annotation="" />
+    <element id="68" name="Reference.class.Reference.function.GetSourceEntityName.h" type="function" annotation="" />
+    <element id="69" name="Reference.class.Reference.function.GetSourceEntityKindName.h" type="function" annotation="" />
+    <element id="70" name="Reference.class.Reference.function.GetTargetEntityId.h" type="function" annotation="" />
+    <element id="71" name="Reference.class.Reference.function.GetTargetEntityName.h" type="function" annotation="" />
+    <element id="72" name="Reference.class.Reference.function.GetTargetEntityKindName.h" type="function" annotation="" />
+    <element id="73" name="Reference.class.Reference.function.GetKind.h" type="function" annotation="" />
+    <element id="74" name="Reference.class.Reference.function.GetFile.h" type="function" annotation="" />
+    <element id="75" name="Reference.class.Reference.function.GetLine.h" type="function" annotation="" />
+    <element id="76" name="Reference.class.Reference.function.GetColumn.h" type="function" annotation="" />
+    <element id="77" name="Reference.class.Reference.function.GetKindText.h" type="function" annotation="" />
+    <element id="78" name="ReferenceKindsParser.class.ReferenceKindsParser.variable.__referencKind.h" type="variable" annotation="" />
+    <element id="79" name="ReferenceKindsParser.class.ReferenceKindsParser.function.ReferenceKindsParser.h" type="function" annotation="" />
+    <element id="80" name="ReferenceKindsParser.class.ReferenceKindsParser.function.~ReferenceKindsParser.h" type="function" annotation="" />
+    <element id="81" name="ReferenceKindsParser.class.ReferenceKindsParser.function.ParseCppKinds.h" type="function" annotation="" />
+    <element id="82" name="ReferenceKindsParser.class.ReferenceKindsParser.function.ParseCSharpKinds.h" type="function" annotation="" />
+    <element id="83" name="ReferenceKindsParser.class.ReferenceKindsParser.function.ParseJavaKinds.h" type="function" annotation="" />
+    <element id="84" name="StringComparer.class.stringComparer.variable._text.h" type="variable" annotation="" />
+    <element id="85" name="StringComparer.class.stringComparer.function.stringComparer.h" type="function" annotation="" />
+    <element id="86" name="StringComparer.class.stringComparer.function.~stringComparer.h" type="function" annotation="" />
+    <element id="87" name="StringComparer.class.stringComparer.function.ContainsText.h" type="function" annotation="" />
+    <element id="88" name="Util.class.Util.function.GetLanguage.h" type="function" annotation="" />
+    <element id="89" name="EntityKind.enum.EntityKind.h" type="enum" annotation="" />
+    <element id="90" name="EntityKind.enum.EntityKind.h.HeaderFile" type="enum_value" annotation="" />
+    <element id="91" name="EntityKind.enum.EntityKind.h.ImplementationFile" type="enum_value" annotation="" />
+    <element id="92" name="EntityKind.enum.EntityKind.h.Class" type="enum_value" annotation="" />
+    <element id="93" name="EntityKind.enum.EntityKind.h.Interface" type="enum_value" annotation="" />
+    <element id="94" name="EntityKind.enum.EntityKind.h.Struct" type="enum_value" annotation="" />
+    <element id="95" name="EntityKind.enum.EntityKind.h.Enum" type="enum_value" annotation="" />
+    <element id="96" name="EntityKind.enum.EntityKind.h.Attribute" type="enum_value" annotation="" />
+    <element id="97" name="EntityKind.enum.EntityKind.h.Function" type="enum_value" annotation="" />
+    <element id="98" name="EntityKind.enum.EntityKind.h.Parameter" type="enum_value" annotation="" />
+    <element id="99" name="EntityKind.enum.EntityKind.h.OtherEntityKind" type="enum_value" annotation="" />
+    <element id="100" name="Language.enum.Language.h" type="enum" annotation="" />
+    <element id="101" name="Language.enum.Language.h.Java" type="enum_value" annotation="" />
+    <element id="102" name="Language.enum.Language.h.Cpp" type="enum_value" annotation="" />
+    <element id="103" name="Language.enum.Language.h.CSharp" type="enum_value" annotation="" />
+    <element id="104" name="Language.enum.Language.h.OtherLanguage" type="enum_value" annotation="" />
+    <element id="105" name="Main.function.ShowError.cpp" type="function" annotation="" />
+    <element id="106" name="Main.function.ListEntityKinds.cpp" type="function" annotation="" />
+    <element id="107" name="Main.function.ListReferenceKinds.cpp" type="function" annotation="" />
+    <element id="108" name="Main.function.ListProjectMetrics.cpp" type="function" annotation="" />
+    <element id="109" name="Main.function.ListEntities.cpp" type="function" annotation="" />
+    <element id="110" name="Main.function.main.cpp" type="function" annotation="" />
+    <element id="111" name="ReferenceKind.enum.ReferenceKind.h" type="enum" annotation="" />
+    <element id="112" name="ReferenceKind.enum.ReferenceKind.h.Include" type="enum_value" annotation="" />
+    <element id="113" name="ReferenceKind.enum.ReferenceKind.h.Call" type="enum_value" annotation="" />
+    <element id="114" name="ReferenceKind.enum.ReferenceKind.h.Use" type="enum_value" annotation="" />
+    <element id="115" name="ReferenceKind.enum.ReferenceKind.h.BaseClass" type="enum_value" annotation="" />
+    <element id="116" name="ReferenceKind.enum.ReferenceKind.h.OtherReferenceKind" type="enum_value" annotation="" />
+    <element id="117" name="Scope.enum.Scope.h" type="enum" annotation="" />
+    <element id="118" name="Scope.enum.Scope.h.Global" type="enum_value" annotation="" />
+    <element id="119" name="Scope.enum.Scope.h.Public" type="enum_value" annotation="" />
+    <element id="120" name="Scope.enum.Scope.h.Protected" type="enum_value" annotation="" />
+    <element id="121" name="Scope.enum.Scope.h.Private" type="enum_value" annotation="" />
+    <element id="122" name="Scope.enum.Scope.h.Internal" type="enum_value" annotation="" />
+    <element id="123" name="Scope.enum.Scope.h.OtherScope" type="enum_value" annotation="" />
+  </elements>
+  <relations>
+    <relation from="12" to="10" type="" weight="1" annotation="" />
+    <relation from="12" to="1" type="" weight="1" annotation="" />
+    <relation from="12" to="6" type="" weight="1" annotation="" />
+    <relation from="12" to="11" type="" weight="1" annotation="" />
+    <relation from="12" to="7" type="" weight="1" annotation="" />
+    <relation from="12" to="9" type="" weight="1" annotation="" />
+    <relation from="12" to="3" type="" weight="1" annotation="" />
+    <relation from="12" to="2" type="" weight="1" annotation="" />
+    <relation from="12" to="8" type="" weight="1" annotation="" />
+    <relation from="12" to="5" type="" weight="1" annotation="" />
+    <relation from="12" to="4" type="" weight="1" annotation="" />
+    <relation from="12" to="88" type="" weight="1" annotation="" />
+    <relation from="12" to="99" type="" weight="1" annotation="" />
+    <relation from="12" to="123" type="" weight="1" annotation="" />
+    <relation from="14" to="1" type="" weight="1" annotation="" />
+    <relation from="15" to="2" type="" weight="1" annotation="" />
+    <relation from="16" to="3" type="" weight="1" annotation="" />
+    <relation from="17" to="4" type="" weight="1" annotation="" />
+    <relation from="18" to="5" type="" weight="1" annotation="" />
+    <relation from="19" to="6" type="" weight="1" annotation="" />
+    <relation from="20" to="7" type="" weight="1" annotation="" />
+    <relation from="21" to="8" type="" weight="1" annotation="" />
+    <relation from="22" to="9" type="" weight="1" annotation="" />
+    <relation from="23" to="10" type="" weight="1" annotation="" />
+    <relation from="24" to="11" type="" weight="1" annotation="" />
+    <relation from="27" to="29" type="" weight="1" annotation="" />
+    <relation from="27" to="30" type="" weight="1" annotation="" />
+    <relation from="27" to="31" type="" weight="1" annotation="" />
+    <relation from="29" to="87" type="" weight="1" annotation="" />
+    <relation from="30" to="87" type="" weight="1" annotation="" />
+    <relation from="31" to="87" type="" weight="1" annotation="" />
+    <relation from="36" to="33" type="" weight="1" annotation="" />
+    <relation from="36" to="34" type="" weight="1" annotation="" />
+    <relation from="36" to="32" type="" weight="1" annotation="" />
+    <relation from="36" to="35" type="" weight="1" annotation="" />
+    <relation from="38" to="32" type="" weight="1" annotation="" />
+    <relation from="39" to="33" type="" weight="1" annotation="" />
+    <relation from="40" to="34" type="" weight="1" annotation="" />
+    <relation from="41" to="35" type="" weight="1" annotation="" />
+    <relation from="44" to="42" type="" weight="1" annotation="" />
+    <relation from="44" to="43" type="" weight="1" annotation="" />
+    <relation from="46" to="42" type="" weight="1" annotation="" />
+    <relation from="46" to="43" type="" weight="1" annotation="" />
+    <relation from="47" to="43" type="" weight="1" annotation="" />
+    <relation from="48" to="43" type="" weight="1" annotation="" />
+    <relation from="48" to="88" type="" weight="1" annotation="" />
+    <relation from="49" to="43" type="" weight="1" annotation="" />
+    <relation from="50" to="43" type="" weight="1" annotation="" />
+    <relation from="51" to="43" type="" weight="1" annotation="" />
+    <relation from="52" to="43" type="" weight="1" annotation="" />
+    <relation from="53" to="43" type="" weight="1" annotation="" />
+    <relation from="65" to="63" type="" weight="1" annotation="" />
+    <relation from="65" to="61" type="" weight="1" annotation="" />
+    <relation from="65" to="60" type="" weight="1" annotation="" />
+    <relation from="65" to="64" type="" weight="1" annotation="" />
+    <relation from="65" to="62" type="" weight="1" annotation="" />
+    <relation from="65" to="54" type="" weight="1" annotation="" />
+    <relation from="65" to="56" type="" weight="1" annotation="" />
+    <relation from="65" to="55" type="" weight="1" annotation="" />
+    <relation from="65" to="57" type="" weight="1" annotation="" />
+    <relation from="65" to="59" type="" weight="1" annotation="" />
+    <relation from="65" to="58" type="" weight="1" annotation="" />
+    <relation from="65" to="116" type="" weight="1" annotation="" />
+    <relation from="67" to="54" type="" weight="1" annotation="" />
+    <relation from="68" to="55" type="" weight="1" annotation="" />
+    <relation from="69" to="56" type="" weight="1" annotation="" />
+    <relation from="70" to="57" type="" weight="1" annotation="" />
+    <relation from="71" to="58" type="" weight="1" annotation="" />
+    <relation from="72" to="59" type="" weight="1" annotation="" />
+    <relation from="73" to="60" type="" weight="1" annotation="" />
+    <relation from="74" to="61" type="" weight="1" annotation="" />
+    <relation from="75" to="62" type="" weight="1" annotation="" />
+    <relation from="76" to="63" type="" weight="1" annotation="" />
+    <relation from="77" to="64" type="" weight="1" annotation="" />
+    <relation from="79" to="81" type="" weight="1" annotation="" />
+    <relation from="79" to="82" type="" weight="1" annotation="" />
+    <relation from="79" to="83" type="" weight="1" annotation="" />
+    <relation from="81" to="87" type="" weight="1" annotation="" />
+    <relation from="82" to="87" type="" weight="1" annotation="" />
+    <relation from="83" to="87" type="" weight="1" annotation="" />
+    <relation from="85" to="84" type="" weight="1" annotation="" />
+    <relation from="87" to="84" type="" weight="1" annotation="" />
+    <relation from="88" to="102" type="" weight="1" annotation="" />
+    <relation from="88" to="103" type="" weight="1" annotation="" />
+    <relation from="88" to="101" type="" weight="1" annotation="" />
+    <relation from="88" to="104" type="" weight="1" annotation="" />
+    <relation from="108" to="53" type="" weight="1" annotation="" />
+    <relation from="108" to="38" type="" weight="1" annotation="" />
+    <relation from="108" to="41" type="" weight="1" annotation="" />
+    <relation from="108" to="40" type="" weight="1" annotation="" />
+    <relation from="109" to="52" type="" weight="1" annotation="" />
+    <relation from="109" to="14" type="" weight="1" annotation="" />
+    <relation from="109" to="24" type="" weight="1" annotation="" />
+    <relation from="109" to="77" type="" weight="1" annotation="" />
+    <relation from="109" to="16" type="" weight="1" annotation="" />
+    <relation from="109" to="21" type="" weight="1" annotation="" />
+    <relation from="109" to="70" type="" weight="1" annotation="" />
+    <relation from="109" to="72" type="" weight="1" annotation="" />
+    <relation from="109" to="71" type="" weight="1" annotation="" />
+    <relation from="109" to="17" type="" weight="1" annotation="" />
+    <relation from="110" to="47" type="" weight="1" annotation="" />
+    <relation from="110" to="109" type="" weight="1" annotation="" />
+    <relation from="110" to="106" type="" weight="1" annotation="" />
+    <relation from="110" to="108" type="" weight="1" annotation="" />
+    <relation from="110" to="107" type="" weight="1" annotation="" />
+    <relation from="110" to="46" type="" weight="1" annotation="" />
+    <relation from="110" to="105" type="" weight="1" annotation="" />
+  </relations>
+</system>

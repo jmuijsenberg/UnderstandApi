@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_entity_kind_parser_8h" kind="file" language="C++">
+    <compoundname>EntityKindParser.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="yes">udb.h</includes>
+    <includes refid="_scope_8h" local="yes">Scope.h</includes>
+    <includes refid="_entity_kind_8h" local="yes">EntityKind.h</includes>
+    <includedby refid="_entity_kind_parser_8cpp" local="yes">EntityKindParser.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>EntityKind.h</label>
+        <link refid="_entity_kind_8h"/>
+      </node>
+      <node id="1">
+        <label>EntityKindParser.h</label>
+        <link refid="_entity_kind_parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Scope.h</label>
+        <link refid="_scope_8h"/>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>udb.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>EntityKindParser.cpp</label>
+        <link refid="_entity_kind_parser_8cpp"/>
+      </node>
+      <node id="1">
+        <label>EntityKindParser.h</label>
+        <link refid="_entity_kind_parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_entity_kind_parser" prot="public">EntityKindParser</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EntityKindParser.h"/>
+  </compounddef>
+</doxygen>

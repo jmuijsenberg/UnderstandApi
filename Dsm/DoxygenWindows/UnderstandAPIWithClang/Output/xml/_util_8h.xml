@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_util_8h" kind="file" language="C++">
+    <compoundname>Util.h</compoundname>
+    <includes local="yes">udb.h</includes>
+    <includes refid="_language_8h" local="yes">Language.h</includes>
+    <includedby refid="_entity_8cpp" local="yes">Entity.cpp</includedby>
+    <includedby refid="_project_8cpp" local="yes">Project.cpp</includedby>
+    <includedby refid="_util_8cpp" local="yes">Util.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Language.h</label>
+        <link refid="_language_8h"/>
+      </node>
+      <node id="1">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>udb.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Entity.cpp</label>
+        <link refid="_entity_8cpp"/>
+      </node>
+      <node id="3">
+        <label>Project.cpp</label>
+        <link refid="_project_8cpp"/>
+      </node>
+      <node id="4">
+        <label>Util.cpp</label>
+        <link refid="_util_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_util" prot="public">Util</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Util.h"/>
+  </compounddef>
+</doxygen>
